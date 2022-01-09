@@ -91,6 +91,7 @@ Coming prepared for help with debugging means
   situations that cause your program to fail
 * you have narrowed down the issue to the smallest section of code that you are
   able to
+
 Just as with other questions,
 almost anything is welcome,
 but more specific is better.
