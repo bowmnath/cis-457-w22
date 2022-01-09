@@ -45,6 +45,9 @@ about course material or assignments,
 especially if
 (1) they come shortly after the material is covered or assignment is posted,
 and (2) they come prepared.
+
+### Preparing for questions about course material
+
 When coming with questions about the lecture videos or activities,
 coming prepared means
 * having watched the lecture video on the topic in question
@@ -58,6 +61,8 @@ coming prepared means
   It is okay if you cannot be as specific as that example,
   but the more specific you are the more helpful my answers will likely be
   for you.
+
+### Preparing for questions about assignments
 
 Asking for help with an assignment is a great use of office hours,
 but when requesting help with an assignment,
@@ -74,6 +79,8 @@ If you can be more specific,
 such as "my solution for number four is off by factor of two from what I would
 expect,"
 I can give more specific advice on how to approach your issue.
+
+### Preparing for help with debugging
 
 I will also help you debug your code for assignments in this course if you come
 to office hours,
