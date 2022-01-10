@@ -11,6 +11,8 @@ Instructor: Nathan Bowman
 
 Email: nathaniel.bowman@gvsu.edu
 
+Office: MAK D-2-212
+
 If you are not sure what office hours are or whether you should come to my
 office hours,
 you can read the [office hour description](misc/office-hour-description.md).
@@ -65,8 +67,10 @@ lecture videos attentively and come to class and actively participate.
 
 ## Course Meetings
 
-This course meets four times per week:
+This course meets three times per week:
 * 11 - 11:50 AM Mondays, Wednesdays, and Fridays (MAK D-1-117)
+
+There is a lab once per week:
 * 3 - 4:50 PM Tuesdays (MAK A-1-167)
 
 ## Sickness Policies
