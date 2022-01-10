@@ -118,6 +118,90 @@ Kurose & Ross; Pearson, 2016
 | D            |  60%         |
 | F            | <60%         |
 
+The grading for homework and labs in this course will done somewhat differently
+from what you may be used to.
+Essentially, you keep working on these until you get the correct answer,
+but no partial credit is given.
+Instead, I will provide you with helpful feedback about any errors in your
+submission and allow you to resubmit without penalty but at a limited rate.
+More details about how this works are given below.
+
+This grading scheme is based on the ideas of "mastery grading,"
+which you may have seen in various forms in other CS and Math classes.
+The benefits to you are that
+(1) you have the opportunity to keep trying until you learn the material, and
+(2) your grade is likely to be higher than it would be in a standard scheme
+if you are willing to put in the work.
+The drawback to you is that you cannot coast by a difficult topic on partial
+credit --
+you need to keep going until you can demonstrate that you understand.
+Mastery schemes tend to push up the grades of students who often get C+s or
+higher,
+but they can also result in more failing grades,
+so be sure to stay on top of the work in this course.
+
+Grading for projects and exams will follow the more standard "one-and-done"
+scheme where you submit once and receive a grade based on how well your
+work meets the specifications.
+This is simply because I currently do not have a better way of grading these
+that can be done in a reasonable amount of time.
+
+### Homework grading
+
+First, it is important to note that
+**all homework scores are either 100% or 0%**.
+If you answer five out of six questions correctly,
+your score is still 0% until you resubmit and get all questions correct.
+
+In homework assignments,
+some of the questions will be automatically graded.
+In those cases,
+you may attempt the problem as many times as needed until you earn full credit
+for that problem.
+For the other questions,
+you complete them all and submit the assignment as a whole when you are ready
+for it to be graded by me.
+At that point,
+I will either score the homework at 100% complete or give you feedback about
+mistakes that you made.
+If you do not score 100%,
+you will be allowed to resubmit as described below.
+
+You may *not* turn in a partial assignment to get feedback on just the part
+that you have finished so far.
+If any of the questions are skipped, answered with "I don't know,"
+or if I determine that any provided answer does not represent a good-faith
+effort to solve the problem,
+then I will not give feedback on any part of the assignment.
+Along the same lines,
+you *cannot* submit an assignment unless all automatically-graded parts have
+been completed for full credit.
+
+To submit an assignment or request regrading of an updated assignment,
+simply upload your newest answers to Prairielearn and add an `X` to the
+relevant place in the
+["grade me" spreadsheet](https://docs.google.com/spreadsheets/d/1FF58ERCKb0UBHvipfZFfY2RrHKgqX_KO0SnPn22OZLI/edit?usp=sharing).
+I will check this spreadsheet at the end of every week,
+grade as requested,
+and clear it for the upcoming week.
+
+A key point to bear in mind is that
+**you are limited to two homework assignment submissions per week.**
+For example, if you need to redo some questions on HW1,
+you can resubmit HW1 in the same week in which you submit HW2.
+But, you cannot resubmit HW1 and resubmit HW2 in the same week in which you
+submit HW3.
+A week starts at 12:00 AM Monday morning and ends at 11:59 PM Sunday night.
+
+### Lab grading
+
+The lab grading will be done in the same way as the homework grading except
+that most of the labs will not have any autograded portion.
+Similar to homework,
+you are allowed up to two lab submissions in a given week.
+These are different from your homework submissions:
+e.g., you may submit HW1, HW2, Lab 1, and Lab 2 all in the same week.
+
 ## Important Dates
 
 Deadline to drop with a "W" grade: March 11, 2022, by 5 pm.
@@ -136,7 +220,7 @@ Final Exam: TBD
   there are free document scanning apps available,
   such as the Google Drive app.
   I reserve the right to specify alternate submission cutoffs per assignment.
-* No late assignments will be accepted.
+* No late projects will be accepted.
   However, to account for cases where a student sleeps through a deadline,
   forgets their laptop at work and cannot make the submission deadline, etc.,
   assignments may be turned in up to 2 hours after the deadline for up to 75%
