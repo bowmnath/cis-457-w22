@@ -91,7 +91,7 @@ After successful completion of this course, students will be able to:
 ## Text
 
 *Computer Networking: A Top-Down Approach, 8th Edition*;
-Kurose & Ross; Pearson, 2016
+Kurose & Ross; Pearson, 2021
 
 ## Prerequisites
 
@@ -174,7 +174,7 @@ or if I determine that any provided answer does not represent a good-faith
 effort to solve the problem,
 then I will not give feedback on any part of the assignment.
 Along the same lines,
-you *cannot* submit an assignment unless all automatically-graded parts have
+you may *not* submit an assignment unless all automatically-graded parts have
 been completed for full credit.
 
 To submit an assignment or request regrading of an updated assignment,
@@ -212,14 +212,13 @@ Final Exam: TBD
 
 ## Course Policies
 
-* All assignments must be submitted to Prairielearn and are due at 11:59 PM EST
-  on the due date.
+* All gradable work (homework, projects, etc.) must be submitted to Prairielearn.
   Some assignments will require drawing diagrams that must be uploaded to
   Prairielearn.
   If you do not have convenient access to a scanner,
   there are free document scanning apps available,
   such as the Google Drive app.
-  I reserve the right to specify alternate submission cutoffs per assignment.
+* All projects are due at 11:59 PM EST on the due date.
 * No late projects will be accepted.
   However, to account for cases where a student sleeps through a deadline,
   forgets their laptop at work and cannot make the submission deadline, etc.,
