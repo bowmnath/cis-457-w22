@@ -5,24 +5,19 @@ We may not get through all of the questions every week.
 You may want to take notes during the discussion,
 because these questions will be helpful in reviewing for exams.
 
-I will be dropping in and out of rooms to facilitate to the discussions and in
-case you have any questions.
-Think of it like me walking around the classroom and listening to different
-groups.
-Again, this isn't meant to be for a grade,
-so don't be concerned about giving a wrong answer even if I am in the room.
-You can also flag me down in Zoom if you have a question even if I'm not in the
-room
-(I think the button in Zoom looks like a question mark).
-
 Note: some questions are taken entirely or in part from your textbook.
 
 # General Questions
 
 1. Choose one group member to act as [server 1](protocols/server-1.md)
-and another to act as [client](protocols/client.md).
+and another to act as [client](protocols/client.md)
+and play out the communication between the two.
+Continue until the protocol says to quit or until you believe the protocol has
+failed.
 Then have other members act as [server 2](protocols/server-2.md)
 and [client](protocols/client.md).
+Continue until the protocol says to quit or until you believe the protocol has
+failed.
 Discuss your general experience and anything it demonstrated about protocols
 in general.
 
