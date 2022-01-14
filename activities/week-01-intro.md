@@ -85,3 +85,43 @@ when it is handled by the link layer,
 when it is handled by the transport layer,
 or it will be the same size in both cases?
 Why?
+
+14. Imagine you have a dog that is sick.
+You want to remedy this by having the dog see a vet,
+but you don't have time to go.
+Instead, you enlist the help of a trusted friend.
+* You give the dog to your friend to be taken to the vet.
+* The friend bikes with your dog from your house to the bus station.
+* The friend and dog ride the bus to the nearest town.
+* They then disembark and walk to the vet.
+* The vet gives the dog some medicine.
+* Your friend and the dog return to you via the same route.
+Explain this process in terms of the network protocol stack,
+particularly the application, network, and link layers.
+
+15. Consider having a basic home phone for voice-only communication.
+Is your phone a client, a server, both, or neither?
+Explain.
+
+16. Each of the real-life situations below involve interacting parties
+(though some parties may not be mentioned explicitly).
+In networking terms,
+describe who is the "client" and who is the "server" in the scenarios.
+* You and your friends decide to call GrubHub to order late-night food.
+* A child is operating a lemonade stand.
+* You attend the office hours of your networking professor.
+* My dog runs to me because I shook his food bowl to announce dinner.
+
+17. When I was in elementary school
+(and this might still happen today,
+but I doubt it),
+teachers had a protocol for passing news of a snow day.
+When the first teacher found out about the snow day from the superindentent,
+they would call another teacher.
+That second teacher would call a third,
+and so on until all teachers knew about the snow day.
+Is this protocol client-server or peer-to-peer?
+If it is client-server,
+who is the client and who is the server?
+If it is peer-to-peer,
+how can you tell?
