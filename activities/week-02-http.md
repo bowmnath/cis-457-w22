@@ -47,35 +47,56 @@ Why? (Hint: why do we need port numbers?)
 The application layer depends on the transport layer to deliver messages
 between two computers.
 
-9. Break the address `http://cis.gvsu.edu/~bowmnath/index.html` into a
+9. What is the purpose of the `content-length` header?
+Not all headers are required for all messages.
+Would you expect this header to be required for HTTP requests, responses,
+both, or neither?
+Why?
+
+10. Break the address `http://cis.gvsu.edu/~bowmnath/index.html` into a
 hostname and a path.
 
-10. A hypothetical web page consists of 4 total objects.
+11. A new open-source web server decided that using ASCII text to transfer
+HTTP was too limiting.
+Instead, it treats all incoming messages as though they were encoded in UTF-16.
+Why might this not work well?
+(You don't need to know the details of ASCII or UTF-16 to answer this,
+but you do need to know the general gist of what they are.)
+
+12. Does HTTP's limitation to ASCII text mean that it is not suitable for
+serving content in languages that require additional symbols?
+Why or why not?
+
+13. A hypothetical web page consists of 4 total objects.
 Each object takes `T_obj` to transmit.
 Assuming a persistent connection is used,
 how long will it take to download the entire web page from the moment the
 request is sent?
 Give your answer in terms of round-trip time (RTT) and `T_obj`.
 
-11. Why does an HTTP server specify a last-modified date for a file?
+14. Why does an HTTP server specify a last-modified date for a file?
 
-12. Explain this statement:
+15. Explain this statement:
 Tracking a user with cookies requires the consent of the user's web browser.
 
-13. If internet protocols were to restrict packet sizes to be extremely small,
+16. Explain the joke in the comic below.
+
+![cookie comic](images/cookies-comic.png)
+
+17. If internet protocols were to restrict packet sizes to be extremely small,
 would this have more of an impact on transmission delay or propagation delay?
 
-14. Traffic density on the access link between a network and the internet is
+18. Traffic density on the access link between a network and the internet is
 currently 0.8.
 Since the density is less than 1,
 the administrator decides to save money by reducing the bandwidth of that link.
 Give a few reasons this might be a bad idea.
 
-15. You recently purchased a new wireless router for your apartment that allows
+19. You recently purchased a new wireless router for your apartment that allows
 you to transfer several gigabits per second on your local network.
 Why will you not necessarily see faster download times from YouTube?
 
-16. In the web cache example from lecture,
+20. In the web cache example from lecture,
 the average access time when using a cache on a busy network was actually less
 than the time it would take to download a web page when the network was
 completely uncongested but did not have a cache.
