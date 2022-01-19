@@ -67,36 +67,48 @@ but you do need to know the general gist of what they are.)
 serving content in languages that require additional symbols?
 Why or why not?
 
-13. A hypothetical web page consists of 4 total objects.
+13. If you have a program, such as `netcat`,
+that opens a TCP connection to a specific port on a specific host,
+then you can implement text-based protocols like HTTP by simply typing in the
+appropriate messages.
+Explain how this relates to the internet's layered architecture.
+
+14. In the HTTP lab, you will use or have used `netcat` to send messages back
+and forth with an HTTP server on the internet.
+These messages were a bit tedious to type out by hand.
+If you wrote a script to send the messages for you,
+what type of common application would you have (partially) implemented?
+
+15. A hypothetical web page consists of 4 total objects.
 Each object takes `T_obj` to transmit.
 Assuming a persistent connection is used,
 how long will it take to download the entire web page from the moment the
 request is sent?
 Give your answer in terms of round-trip time (RTT) and `T_obj`.
 
-14. Why does an HTTP server specify a last-modified date for a file?
+16. Why does an HTTP server specify a last-modified date for a file?
 
-15. Explain this statement:
+17. Explain this statement:
 Tracking a user with cookies requires the consent of the user's web browser.
 
-16. Explain the joke in the comic below.
+18. Explain the joke in the comic below.
 
 ![cookie comic](images/cookies-comic.png)
 
-17. If internet protocols were to restrict packet sizes to be extremely small,
+19. If internet protocols were to restrict packet sizes to be extremely small,
 would this have more of an impact on transmission delay or propagation delay?
 
-18. Traffic density on the access link between a network and the internet is
+20. Traffic density on the access link between a network and the internet is
 currently 0.8.
 Since the density is less than 1,
 the administrator decides to save money by reducing the bandwidth of that link.
 Give a few reasons this might be a bad idea.
 
-19. You recently purchased a new wireless router for your apartment that allows
+21. You recently purchased a new wireless router for your apartment that allows
 you to transfer several gigabits per second on your local network.
 Why will you not necessarily see faster download times from YouTube?
 
-20. In the web cache example from lecture,
+22. In the web cache example from lecture,
 the average access time when using a cache on a busy network was actually less
 than the time it would take to download a web page when the network was
 completely uncongested but did not have a cache.
