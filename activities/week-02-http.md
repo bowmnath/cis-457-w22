@@ -113,3 +113,16 @@ the average access time when using a cache on a busy network was actually less
 than the time it would take to download a web page when the network was
 completely uncongested but did not have a cache.
 Explain how this is possible.
+
+23. In the web cache example from lecture,
+the local network had a bandwidth of 100 Mbps,
+the access link originally had a bandwidth of 15 Mbps,
+and the Internet delay was two seconds.
+In order to decrease the delay a user experienced when requesting a web page
+from the internet,
+our first idea was to increase the bandwidth of the access link.
+No matter how fast we make that link,
+there is a lower bound on the amount of time it will take for a user to get a
+web page
+(assuming no web cache is used).
+What is that lower bound? Explain.
