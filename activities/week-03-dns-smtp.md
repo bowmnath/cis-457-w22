@@ -121,13 +121,31 @@ Why or why not?
 19. What is the advantage to using a dedicated mail server rather than sending
 email directly from a user agent?
 
-20. Can you think of any reason an SMTP handshake is helpful?
+20. What is the difference between an SMTP handshake and a TCP handshake?
+(We have not learned the details of a TCP handshake yet;
+I'm looking for a fairly general answer here.)
+
+21. Can you think of any reason an SMTP handshake is helpful?
 Once the TCP connection is established,
 why not just send the first email?
 
-21. Based on what you saw in lecture,
+22. Based on what you saw in lecture,
 how does SMTP prevent email spoofing
 (sending email from someone else's address)?
 
-22. Describe what it means that SMTP is a push protocol whereas HTTP is a pull
+23. SMTP connections are persistent.
+What are possible benefits or drawbacks to this?
+
+23. Describe what it means that SMTP is a push protocol whereas HTTP is a pull
 protocol.
+
+24. If you were to download a web page with some text and three images,
+how many `HTTP GET` requests would you need?
+How many application-layer messages are required to send an email with some
+text and three images?
+
+25. Is an access protocol,
+such as POP3, IMAP, or HTTP,
+necessary for reading email stored on a mail server?
+If so, why?
+If not, why not?
