@@ -1,46 +1,120 @@
-In your groups, answer the following questions.
-No need to report the answers to me --
-this is just for practice.
-We may not get through all of the questions every week.
-You may want to take notes during the discussion,
-because these questions will be helpful in reviewing for exams.
-
-I will be dropping in and out of rooms to facilitate to the discussions and in
-case you have any questions.
-Think of it like me walking around the classroom and listening to different
-groups.
-Again, this isn't meant to be for a grade,
-so don't be concerned about giving a wrong answer even if I am in the room.
-You can also flag me down in Zoom if you have a question even if I'm not in the
-room
-(I think the button in Zoom looks like a question mark).
-
-Note: some questions are taken entirely or in part from your textbook.
+Note: some questions may be taken entirely or in part from your textbook.
 
 # General Questions
 
 1. Explain the purpose of a "welcome" socket vs a "connection" socket in TCP.
 
-2. What is the difference between a UDP welcome socket vs a TCP welcome
-socket?
+2. Consider two scenarios:
+* A receptionist at a busy office handles clients' phone calls directly and
+  addresses their concerns themself.
+* The receptionist instead greets the customer and then connects the customer
+  with a different representative who handles the customer's question.
+One of these scenarios is more like TCP, and the other more like UDP.
+Explain.
 
-3. If my client encodes strings using UTF-8 and my server decodes them using
+3. Consider a standard answering machine and a person who calls two separate
+times back-to-back and leaves a voicemail each time.
+When you are listening to your voicemails,
+you hear two separate messages.
+
+Alternatively, consider a machine that instead appends the second voicemail the
+first as one large piece of data.
+When you listen to your voicemails on this machine,
+you grab the message in sound-bites from that one large piece of data,
+where the sound-bites do not necessarily line up with the original messages.
+
+Which of these scenarios is more similar to TCP,
+and which is more similar to UDP?
+
+4. If my client encodes strings using UTF-8 and my server decodes them using
 ASCII,
 will this be a problem?
 Why or why not?
 (This is not a question about those two particular encodings.)
 
-4. HTTP and SMTP both run over TCP.
+5. Consider the following simple protocol.
+* A client greets a server with the message `hello`
+* The server resonds with a greeting
+* The client then sends two integers separated by a space; e.g., `5 4`
+* The server responds with a message indicating whether the first number is
+  less than the second
+* If the client does first not properly greet the server,
+  the server will not answer the client's question about the numbers.
+* A new greeting must be sent before each pair of numbers.
+* The protocol runs over UDP
+
+During the discussion section,
+there will be an implementation of the server side of this protocol running on
+DataComm.
+* Write client code that allows you to interact with this server and displays
+  the server responses.
+  This code can actually interact with my server if you run it on the DataComm
+  computers via `cislab.hpc.gvsu.edu`.
+* Try out a few interactions with the server,
+  including ones that do not follow the typical protocol
+* Your client code can be *very* similar to the example code in the course
+  repository under `misc/socket-examples/udp`.
+
+If you want to try this on your own time,
+the server code is included in the `code/` subdirectory of the activities.
+However, you should be able to write your client without needing to look at the
+server code.
+
+6. You probably wrote the client code in Python,
+which is the same language the server was written in.
+Is it possible for a client written in another language,
+such as Java,
+to interact with my Python server?
+If so,
+what special changes would you need to make to account for the differences
+in languages, if any?
+If not, why not?
+
+7. If you are running on DataComm,
+you can see your IP address using the command `ip addr`.
+Look for an output named `enp0...` and a section `inet:` underneath it.
+The number after that label is your IP address (ignore the `/24`).
+Is this the same IP address that the server is running on?
+Does it need to be?
+
+8. The protocol uses UDP for simplicity,
+but there are significant downsides to this given the way the protocol works.
+(You may have run into issues because of this when testing out the protocol
+during the class period.)
+Why would TCP be a better choice of transport-layer protocol for supporting
+this application-layer protocol?
+
+9. If you were able to write the client,
+you probably found that it didn't really do much.
+Next, upgrade it so that the client program takes care of the greeting part for
+you.
+That is,
+you simply enter a pair of numbers and the client handles the "handshake" with
+the server without you needing to do anything as the user.
+
+10. We almost certainly will not have time for this in class,
+but if you are looking for a few extra ways to test yourself:
+* Write the server side of the program.
+  You should be able to test it using your own client.
+  Let me know if you have trouble getting it set up and listening on a
+  DataComm computer.
+* Write a client and server for a similar protocol that runs over TCP.
+* Create your own simple protocol with a friend and have one of you write the
+  client and the other write the server.
+  Try running them on different hosts on DataComm and see if you were
+  successful in implementing your protocol.
+
+11. HTTP and SMTP both run over TCP.
 However, those two protocols have substantial differences in the messages they
 send.
 How do these differences affect the transport-layer headers?
 
-5. If UDP were to change the way it computed a checksum,
+12. If UDP were to change the way it computed a checksum,
 would routers on the internet need to be updated accordingly?
 If so, how?
 If not, why not?
 
-6. When a simple application message,
+13. When a simple application message,
 such as an HTTP GET request,
 is sent from a client to a server,
 is the message largest when it is
@@ -49,44 +123,44 @@ is the message largest when it is
 * a network-layer datagram?
 Why?
 
-7. We will study encryption later,
+14. We will study encryption later,
 but a simple understanding is that it allows messages to be passed privately
 between processes even in the presence of eavesdroppers.
 Why might it be helpful to provide encryption at the transport layer rather
 than the application layer?
 What downsides might there be?
 
-8. Assume an internet-connected host runs just one networked application.
+15. Assume an internet-connected host runs just one networked application.
 For example, this host is only a web server.
 Since there is no problem distinguishing which application messages are being
 sent to,
 can this server get by without implementing transport-layer protocols?
 Why or why not?
 
-9. What is the purpose of port numbers?
+16. What is the purpose of port numbers?
 How do they differ from IP addresses?
 
-10. Servers generally listen on well-known port numbers,
+17. Servers generally listen on well-known port numbers,
 such as port 80 for an HTTP server.
 Why do clients not need to send from well-known numbers?
 
-11. If I know a TCP segment was sent to (192.168.3.1, 80),
+18. If I know a TCP segment was sent to (192.168.3.1, 80),
 is that enough information to specify which socket it goes to?
 Why or why not?
 
-12. In UDP, only the destination IP and port are necessary to specify a socket.
+19. In UDP, only the destination IP and port are necessary to specify a socket.
 If two clients send UDP segments to the same (IP, port) pair,
 why are they not interfering with one another's connections?
 
-13. Why might using UDP as the transport protocol for a video streaming service
+20. Why might using UDP as the transport protocol for a video streaming service
 be frowned upon?
 
-14. Ethernet is a link-layer protocol that provides error detection at the link
+21. Ethernet is a link-layer protocol that provides error detection at the link
 level.
 If my computer is connected to my router via Ethernet,
 why might a UDP checksum still prove helpful?
 
-15. At the receiving host,
+22. At the receiving host,
 the sum of 16-bit words in a message is
 ```
 0110011001100000
