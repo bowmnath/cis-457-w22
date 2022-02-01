@@ -26,7 +26,7 @@ where the sound-bites do not necessarily line up with the original messages.
 Which of these scenarios is more similar to TCP,
 and which is more similar to UDP?
 
-4. If my client encodes strings using UTF-8 and my server decodes them using
+4. If my client encodes strings using UTF-16 and my server decodes them using
 ASCII,
 will this be a problem?
 Why or why not?
