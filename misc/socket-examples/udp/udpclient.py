@@ -9,14 +9,14 @@ import socket
 
 
 
-server_name = 'localhost'
+server_ip = 'localhost'
 server_port = 12000
 buffer_size = 2048
 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 message = input('Input lowercase sentence:')
 
-client_socket.sendto(message.encode('utf-8'), (server_name, server_port))
+client_socket.sendto(message.encode('utf-8'), (server_ip, server_port))
 modified_message, server_address = client_socket.recvfrom(buffer_size)
 print(modified_message.decode('utf-8'))
 client_socket.close()

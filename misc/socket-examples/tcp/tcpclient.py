@@ -9,12 +9,12 @@ import socket
 
 
 
-server_name = 'localhost'
+server_ip = 'localhost'
 server_port = 12000
 buffer_size = 1024
 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client_socket.connect((server_name, server_port))
+client_socket.connect((server_ip, server_port))
 
 sentence = input('Input lowercase sentence:')
 client_socket.send(sentence.encode('utf-8'))
