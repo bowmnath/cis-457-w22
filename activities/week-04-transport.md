@@ -153,14 +153,24 @@ If two clients send UDP segments to the same (IP, port) pair,
 why are they not interfering with one another's connections?
 
 20. Why might using UDP as the transport protocol for a video streaming service
-be frowned upon?
+be frowned upon by others on the network?
 
-21. Ethernet is a link-layer protocol that provides error detection at the link
+21. Consider a socket that is set up to listen for incoming messages.
+In UDP, if another host contacts that socket with an application-layer message,
+that socket can reply directly.
+In TCP, this is not possible.
+What is the extra step that is required?
+
+22. My office is in Mackinac Hall in room D-2-212.
+If I were a networked process,
+what would you way were my "port number" and "IP address"?
+
+23. Ethernet is a link-layer protocol that provides error detection at the link
 level.
 If my computer is connected to my router via Ethernet,
 why might a UDP checksum still prove helpful?
 
-22. At the receiving host,
+24. At the receiving host,
 the sum of 16-bit words in a message is
 ```
 0110011001100000
@@ -170,3 +180,14 @@ and the UDP checksum is
 0001100110011111
 ```
 Did an error occur in the transmission?
+
+What if the UDP checksum were
+```
+1001100110011111
+```
+
+25. The UDP header reserves 16 bits each for storing the source port,
+destination port, length, and checksum.
+Given this, what is the maximum number of ports available when communicating
+over UDP?
+How can you tell?
