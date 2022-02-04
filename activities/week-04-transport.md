@@ -191,3 +191,30 @@ destination port, length, and checksum.
 Given this, what is the maximum number of ports available when communicating
 over UDP?
 How can you tell?
+
+26. Consider drawing a FSM for an HTTP server.
+What aspect of the HTTP protocol will make this a rather plain FSM?
+Try actually drawing the simple FSM assuming the server only ever responds
+with `200 OK`, `304 Not modified`, or `404 Not found`.
+
+27. Consider the client and server from the simple protocol we programmed in a
+previous example.
+Draw FSMs describing the behavior of both.
+
+28. You are giving directions to a friend over the phone,
+such as "turn left, then right, then drive two blocks..."
+After every step they say "yeah", or "uh-huh", or similar.
+If they instead say "wait, what was that?",
+then you repeat the last step.
+What networking tool are you and your friend using to ensure you have reliable
+communication?
+
+29. Imagine you are in the scenario above,
+but your friend does not respond after you say "turn right".
+Assuming they did not hear you,
+you repeat that step.
+What problem might your friend run into?
+How does this relate to computer networks,
+and what tool do networks use to solve this particular problem?
+How could you and your friend do something similar over the phone?
+
