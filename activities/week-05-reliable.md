@@ -1,22 +1,3 @@
-In your groups, answer the following questions.
-No need to report the answers to me --
-this is just for practice.
-We may not get through all of the questions every week.
-You may want to take notes during the discussion,
-because these questions will be helpful in reviewing for exams.
-
-I will be dropping in and out of rooms to facilitate to the discussions and in
-case you have any questions.
-Think of it like me walking around the classroom and listening to different
-groups.
-Again, this isn't meant to be for a grade,
-so don't be concerned about giving a wrong answer even if I am in the room.
-You can also flag me down in Zoom if you have a question even if I'm not in the
-room
-(I think the button in Zoom looks like a question mark).
-
-Note: some questions are taken entirely or in part from your textbook.
-
 # General Questions
 
 1. What mechanism is used to detect corrupt packets in TCP?
@@ -38,18 +19,53 @@ If so, come up with a scenario where the protocol would fail without sequence
 numbers.
 If not, explain why not.
 
+For the next few questions,
+imagine you have a one-sided pen pal,
+someone with whom you exchange written letters on a regular basis.
+You tend to send them long letters,
+and they usually just reply letting you know that they got your letter.
+However, you and your pen pal are concerned about the quality of the postal
+service in your country.
+The sometimes lose letters,
+and they sometimes drop them in water so parts of the letters are unreadable.
+
+6. Assume you never send more than one consecutive letter without hearing a
+reply from your friend.
+Describe how you and your friend could be sure that all of your letters
+are eventually arriving at their house safely and correctly.
+Consider using a finite-state machine to describe your process.
+
+7. If it generally takes three days for your letters to reach your friend,
+how frequently can you send letters using the protocol you described above?
+
+8. What if you did not limit yourself to one outstanding letter at a time?
+Consider the situation in which you would like to send them daily news.
+If you were instead willing to have three unanswered letters out at once,
+would this be enough to allow you to send daily news?
+Why or why not?
+
+9. What complications might arise if you had three unanswered letters out at
+once?
+Consider your protocol from (6).
+Would it be able to handle all possible failure cases
+(lost and corrupted letters, etc.)?
+If so,
+explain how.
+If it needs to be modified,
+suggest modifications.
+
 For the next two questions, assume the following scenario:
 Using GBN with a window size of 5, a sender sends packets 1 - 5.
 The sender recieves just one ACK, and the ACK is for packet 3.
 
-6. Which packet(s) will be re-sent?
+10. Which packet(s) will be re-sent?
 
-7. What is the current window for the sender?
+11. What is the current window for the sender?
 
-8. Assume a TCP sender sends packets 1 - 5 and receives ACKs for 1, 4, and 5.
+12. Assume a TCP sender sends packets 1 - 5 and receives ACKs for 1, 4, and 5.
 What packet(s) will be re-sent?
 
-9. In lecture, our assumption was that packets would not "switch order" in
+13. In lecture, our assumption was that packets would not "switch order" in
 the network.
 That is, if packet A is sent before packet B,
 packet A will arrive before packet B unless packet A is lost.
@@ -58,23 +74,23 @@ do we need to make any changes to rdt3.0 to account for it?
 If so, describe the changes.
 If not, explain why.
 
-10. Which will benefit more from pipelined data transfer:
+14. Which will benefit more from pipelined data transfer:
 * connection with low latency and high transmission rate, or
 * connection with high latency and high transmission rate?
 
 Why?
 
-11. Assume a receiver has a very small receive buffer.
+15. Assume a receiver has a very small receive buffer.
 Which protocol would likely be a better fit: GBN or SR?
 Why?
 
-12. Assume an SR sender has a window size of 5 and sequence numbers [0 - 7].
+16. Assume an SR sender has a window size of 5 and sequence numbers [0 - 7].
 Explain why this combination fo sequence numbers and window size would not work
 using an example.
 I.e., come up with a scenario in which the receiver does not know whether it is
 receiving new or old data.
 
-13. Assume the same scenario as the previous problem,
+17. Assume the same scenario as the previous problem,
 but using GBN instead of SR.
 Could the same problem arise?
 Why or why not?
