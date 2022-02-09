@@ -19,6 +19,9 @@ Note: some questions are taken entirely or in part from your textbook.
 
 # General Questions
 
+13. Assume a TCP sender sends packets 1 - 5 and receives ACKs for 1, 4, and 5.
+What packet(s) will be re-sent?
+
 1. Why is a server generally able to handle more UDP clients at once than TCP
 clients?
 

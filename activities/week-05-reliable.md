@@ -67,10 +67,7 @@ The sender recieves just one ACK, and the ACK is for packet 3.
 
 12. What is the current window for the sender?
 
-13. Assume a TCP sender sends packets 1 - 5 and receives ACKs for 1, 4, and 5.
-What packet(s) will be re-sent?
-
-14. In lecture, our assumption was that packets would not "switch order" in
+13. In lecture, our assumption was that packets would not "switch order" in
 the network.
 That is, if packet A is sent before packet B,
 packet A will arrive before packet B unless packet A is lost.
@@ -79,7 +76,7 @@ do we need to make any changes to rdt3.0 to account for it?
 If so, describe the changes.
 If not, explain why.
 
-15. Assume a sender has recently received ACKs for packets with sequence
+14. Assume a sender has recently received ACKs for packets with sequence
 numbers 1, 3, and 5.
 A timeout then occurs,
 and the sender resends a packet with sequence number 2.
@@ -89,34 +86,34 @@ GBN?
 If so, which protocol is in use?
 If not, what other information would you need?
 
-16. Which will benefit more from pipelined data transfer:
+15. Which will benefit more from pipelined data transfer:
 * connection with low latency and high transmission rate, or
 * connection with high latency and high transmission rate?
 
 Why?
 
-17. Assume a receiver has a very small receive buffer.
+16. Assume a receiver has a very small receive buffer.
 Which protocol would likely be a better fit: GBN or SR?
 Why?
 
-18. Assume we have a channel that we know will frequently reorder packets,
+17. Assume we have a channel that we know will frequently reorder packets,
 but that dropping packets is very rare.
 Which type of pipelined protocol that we have discussed would be a better fit
 for this channel?
 Why?
 
-19. Assume an SR sender has a window size of 5 and sequence numbers [0 - 7].
+18. Assume an SR sender has a window size of 5 and sequence numbers [0 - 7].
 Explain why this combination of sequence numbers and window size would not work
 using an example.
 I.e., come up with a scenario in which the receiver does not know whether it is
 receiving new or old data.
 
-20. Assume the same scenario as the previous problem,
+19. Assume the same scenario as the previous problem,
 but using GBN instead of SR.
 Could the same problem arise?
 Why or why not?
 
-21. We learned in leture that if we have a window of size N,
+20. We learned in leture that if we have a window of size N,
 then we need at least 2N sequence numbers to be safe.
 Draw a diagram (or a few diagrams) showing possible sender and receiver windows
 that explains why this is the case.
