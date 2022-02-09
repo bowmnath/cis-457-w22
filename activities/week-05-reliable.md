@@ -54,18 +54,23 @@ explain how.
 If it needs to be modified,
 suggest modifications.
 
+10. Assume you have started numbering your letters to your pen pal.
+If the pen pal receives letters 1, 2, and 4 in that order,
+they immediately burn letter 4 and discard the ashes without reading it.
+Which type of pipelined protocol is your pen pal using?
+
 For the next two questions, assume the following scenario:
 Using GBN with a window size of 5, a sender sends packets 1 - 5.
 The sender recieves just one ACK, and the ACK is for packet 3.
 
-10. Which packet(s) will be re-sent?
+11. Which packet(s) will be re-sent?
 
-11. What is the current window for the sender?
+12. What is the current window for the sender?
 
-12. Assume a TCP sender sends packets 1 - 5 and receives ACKs for 1, 4, and 5.
+13. Assume a TCP sender sends packets 1 - 5 and receives ACKs for 1, 4, and 5.
 What packet(s) will be re-sent?
 
-13. In lecture, our assumption was that packets would not "switch order" in
+14. In lecture, our assumption was that packets would not "switch order" in
 the network.
 That is, if packet A is sent before packet B,
 packet A will arrive before packet B unless packet A is lost.
@@ -74,23 +79,44 @@ do we need to make any changes to rdt3.0 to account for it?
 If so, describe the changes.
 If not, explain why.
 
-14. Which will benefit more from pipelined data transfer:
+15. Assume a sender has recently received ACKs for packets with sequence
+numbers 1, 3, and 5.
+A timeout then occurs,
+and the sender resends a packet with sequence number 2.
+You may assume the sender has a few hundred sequence numbers available to it.
+Is this enough information to determine whether the protocol in use is SR or
+GBN?
+If so, which protocol is in use?
+If not, what other information would you need?
+
+16. Which will benefit more from pipelined data transfer:
 * connection with low latency and high transmission rate, or
 * connection with high latency and high transmission rate?
 
 Why?
 
-15. Assume a receiver has a very small receive buffer.
+17. Assume a receiver has a very small receive buffer.
 Which protocol would likely be a better fit: GBN or SR?
 Why?
 
-16. Assume an SR sender has a window size of 5 and sequence numbers [0 - 7].
-Explain why this combination fo sequence numbers and window size would not work
+18. Assume we have a channel that we know will frequently reorder packets,
+but that dropping packets is very rare.
+Which type of pipelined protocol that we have discussed would be a better fit
+for this channel?
+Why?
+
+19. Assume an SR sender has a window size of 5 and sequence numbers [0 - 7].
+Explain why this combination of sequence numbers and window size would not work
 using an example.
 I.e., come up with a scenario in which the receiver does not know whether it is
 receiving new or old data.
 
-17. Assume the same scenario as the previous problem,
+20. Assume the same scenario as the previous problem,
 but using GBN instead of SR.
 Could the same problem arise?
 Why or why not?
+
+21. We learned in leture that if we have a window of size N,
+then we need at least 2N sequence numbers to be safe.
+Draw a diagram (or a few diagrams) showing possible sender and receiver windows
+that explains why this is the case.
