@@ -113,7 +113,7 @@ but using GBN instead of SR.
 Could the same problem arise?
 Why or why not?
 
-20. We learned in leture that if we have a window of size N,
+20. We learned in leture that if we have a window of size N in SR,
 then we need at least 2N sequence numbers to be safe.
 Draw a diagram (or a few diagrams) showing possible sender and receiver windows
 that explains why this is the case.
