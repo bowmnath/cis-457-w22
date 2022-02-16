@@ -178,13 +178,10 @@ Consider the following two scenarios for obtaining the furniture.
 How long does it take to get all of the furniture home in Scenario A?
 In Scenario B?
 
-22. This is obviously supposed to be a metaphor for TCP,
-but it is an imperfect one because furniture store did not require a
-"handshake".
-If, for some reason that I am unable to fit smoothly into the story,
-you had to drive out to the furniture store and back once before you were
-allowed to get your first piece of furniture,
-what would the updated times be for Scenarios A and B?
+22. The scenario above is not a perfect metaphor for TCP because the furniture
+store did not require a "handshake".
+What would a TCP-style handshake look like in the fictional scenario above,
+and how would it effect the times of the two scenarios?
 
 23. What TCP topic do the previous questions remind you of?
 
