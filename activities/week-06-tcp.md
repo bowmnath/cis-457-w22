@@ -97,3 +97,97 @@ rate-limiting in flow control vs congestion control.
 
 12. Why is a triple duplicate ACK treated differently than a timeout for
 purposes of congestion control?
+
+13. Which of the following parties can "break" TCP's congestion control
+(cause an unreasonable amount of data to be sent into the network)
+on a network shared by several hosts:
+* A single sender acting on its own
+* A single receiver acting on its own
+* A single sender-receiver pair acting together
+
+14. Even if congestion is not bad enough that packets are dropped,
+a TCP sender will grow its window faster in an uncongested network than a
+congested one.
+Why?
+(Hint: why is TCP called "self-clocking"?)
+
+15. Consider an office with an overworked secretary who sometimes takes a while
+to send memos along to clients and sometimes forgets to send them at all.
+You know from experience that if they are bombarded with memos,
+they will get flustered and it will just take them longer to send the memos
+along.
+* Scenario A: You give the secretary three memos to send to a single client.
+  The next day, you have not heard anything back from the client.
+* Scenario B: You give the secretary three memos for a client.
+  The next day,
+  you have a letter from the client complaining that the two memos you sent
+  don't make any sense and that there is clearly missing information.
+
+If you have several more memos you need sent,
+are you better off in Scenario A or Scenario B?
+Why?
+
+How does this relate to congestion control?
+
+16. A TCP sender with no current outstanding packets sends out 4 packets,
+waits one RTT,
+then sends out 8 packets.
+If you assume they are not in the Fast Recovery state,
+which of the following is true:
+* they are most likely in the Slow Start state;
+* they are most likely in the Congestion Avoidance state;
+* they are equally likely to be in the Slow Start or Congestion Avoidance
+  states?
+
+17. If a TCP sender receives an ACK and increases its congestion window by
+the size of one packet,
+which of the three states might it be in?
+
+You may want to look at the FSM diagram for the next few questions if you have
+not already been referencing it.
+
+18. TCP Senders A and B have the same current congestion window.
+Sender A suffers a timeout,
+and Sender B has a triple-duplicate ACK.
+Which one, if either, has the higher value of `ssthresh`?
+
+19. The current congestion window for a sender is 15 packets.
+If the sender is in Congestion Avoidance,
+how many ACKs must they receive before their window is 17 packets?
+
+20. Even though the first phase of congestion avoidance is called
+"Slow Start",
+a sender generally will not spend much time there.
+Why not?
+
+21. Imagine you want five pieces of furniture from a store that is one hour
+away.
+Your car is large enough to fit just one piece of furniture at a time.
+Consider the following two scenarios for obtaining the furniture.
+* Scenario A: You drive out to the furniture store and take the pieces away
+  one at a time,
+  resulting in several trips to the far-away store.
+* Scenario B: A local branch of the store offers to get the items for you.
+  This branch is just five minutes away from you
+  (and 55 minutes from the other store).
+  They do not drive any faster than you,
+  but they can fit all five pieces into their truck.
+  However, they will only bring them to their store --
+  they do not deliver to your house.
+
+How long does it take to get all of the furniture home in Scenario A?
+In Scenario B?
+
+22. This is obviously supposed to be a metaphor for TCP,
+but it is an imperfect one because furniture store did not require a
+"handshake".
+If, for some reason that I am unable to fit smoothly into the story,
+you had to drive out to the furniture store and back once before you were
+allowed to get your first piece of furniture,
+what would the updated times be for Scenarios A and B?
+
+23. What TCP topic do the previous questions remind you of?
+
+24. The topic above is somewhat different from caching.
+How is this scenario different?
+What would caching look like in our made-up furniture example?
