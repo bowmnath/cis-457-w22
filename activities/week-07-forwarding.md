@@ -1,59 +1,80 @@
-In your groups, answer the following questions.
-No need to report the answers to me --
-this is just for practice.
-We may not get through all of the questions every week.
-You may want to take notes during the discussion,
-because these questions will be helpful in reviewing for exams.
-
-I will be dropping in and out of rooms to facilitate to the discussions and in
-case you have any questions.
-Think of it like me walking around the classroom and listening to different
-groups.
-Again, this isn't meant to be for a grade,
-so don't be concerned about giving a wrong answer even if I am in the room.
-You can also flag me down in Zoom if you have a question even if I'm not in the
-room
-(I think the button in Zoom looks like a question mark).
-
-Note: some questions are taken entirely or in part from your textbook.
-
 # General Questions
 
-1. Is it easier to provide a minimum bandwidth guarantee in a packet-switched
+1. Consider a fast-food drive through lane.
+For much of the day,
+the drive-through is nearly empty.
+Around noon and five o'clock,
+the line suddenly becomes very long,
+and then eventually dies down again after an hour or so.
+If this lane were a link on a network,
+would the network be packet-switched or circuit-switched?
+How can you tell?
+
+2. To alleviate the crowding issue,
+the restaurant emails all of its customers and assigns them a 2-minute time
+slot at some point in the day.
+The customer is allowed to visit the drive-through at only this point in time.
+What are the upsides and downsides to this idea?
+How does this relate to networking?
+
+3. Is it easier to provide a minimum bandwidth guarantee in a packet-switched
 or a circuit-switched network?
 Why?
 
-2. How do two hosts reserve bandwidth ahead of time in a packet-switched
+4. How do two hosts reserve bandwidth ahead of time in a packet-switched
 network?
 
-3. In which type of network, packet-switched or circuit-switched,
-are queueing delays usually more of an issue?
+5. The city of Bigsburgh has a six-lane highway running through it.
+The residents are grumpy that out-of-state drivers cause a lot of congestion,
+so they pass a law stating that Bigsburghians drive only in the left three
+lanes and all other drivers are in the right three lanes.
+Is this example most closetly related to packet-switching,
+circuit-switching with FDM,
+or circuit-switching with TDM?
+Explain.
 
-4. Describe the difference between time-division and frequency-division
+6. In which type of network, packet-switched or circuit-switched,
+are queueing delays usually more of an issue?
+Why?
+
+7. Describe the difference between time-division and frequency-division
 multiplexing.
+Try to give real-life examples of each.
+
+8. For a given set of sending hosts,
+is it ever possible for a packet-switched network to have a lower utilization
+than a circuit-switched network?
+If so,
+give an example.
+Otherwise, explain why not.
 
 In the next two questions, assume the network under consideration is
 circuit-switched and uses TDM.
 
-5. If there are 5 hosts sharing a 1 Mbps link
+9. If there are 5 hosts sharing a 1 Mbps link
 and 4 of the hosts are almost always idle,
 what is the effective transmission rate of the host that is sending?
 
-6. In the above question,
+10. In the above question,
 what percent of the time is the link idle?
 
-7. If there are 5 hosts sharing a 1 Mbps link on a **packet-switched** network
+11. If there are 5 hosts sharing a 1 Mbps link on a **packet-switched** network
 and 4 of the hosts are almost always idle,
 what is the effective transmission rate of the host that is sending?
 
-8. When a packet moves from the input interface of a router to an output
+12. In general,
+describe a worst-case sending pattern for packet-switched networks in terms
+of resource utilization.
+Then, describe a best-case pattern.
+
+13. When a packet moves from the input interface of a router to an output
 interface,
 this is... (forwarding or routing)?
 
-9. List a few kinds of guarantees that could be provided by a network layer.
+14. List a few kinds of guarantees that could be provided by a network layer.
 What guarantees are provided by the internet's network layer?
 
-10. Where would queueing delays most likely occur in a router under each of the
+15. Where would queueing delays most likely occur in a router under each of the
 following circumstances?
 (Some of these may not result in excessive queueing at all.)
 * The switching fabric is significantly slower than the input ports
@@ -78,7 +99,7 @@ Give the link interface for each of the following addresses:
 
 Note: `10100010b = 162`, `10100011b = 163`, and `11100000b = 224`.
 
-11. Assume a router has 5 input ports and 5 output ports.
+16. Assume a router has 5 input ports and 5 output ports.
 What is the maximum number of packets that can be moved across the switching
 fabric at once using
 * a bus?
@@ -89,8 +110,8 @@ output port of a router at roughly the same time.
 We refer to the packets simply as 1, 2, 3, 4, 5, based on the order of their
 arrival.
 
-12. How will the packets be scheduled using priority scheduling if odd-numbered
+17. How will the packets be scheduled using priority scheduling if odd-numbered
 packets are high-priority and even-numbered packets are low-priority?
 
-13. How will the packets be scheduled using round robin scheduling if
+18. How will the packets be scheduled using round robin scheduling if
 packets 1 and 4 are one class and packets 2, 3, and 5 are another class?

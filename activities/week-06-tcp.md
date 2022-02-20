@@ -98,12 +98,16 @@ rate-limiting in flow control vs congestion control.
 12. Why is a triple duplicate ACK treated differently than a timeout for
 purposes of congestion control?
 
-13. Which of the following parties can "break" TCP's congestion control
+13. If they decide to deviate from TCP's congestion control policies,
+which of the following parties can "break" TCP's congestion control
 (cause an unreasonable amount of data to be sent into the network)
 on a network shared by several hosts:
 * A single sender acting on its own
 * A single receiver acting on its own
 * A single sender-receiver pair acting together
+
+For each of the above,
+explain how or explain why it is not possible.
 
 14. Even if congestion is not bad enough that packets are dropped,
 a TCP sender will grow its window faster in an uncongested network than a
