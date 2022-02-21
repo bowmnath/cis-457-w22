@@ -63,7 +63,7 @@ and 4 of the hosts are almost always idle,
 what is the effective transmission rate of the host that is sending?
 
 12. In general,
-describe a worst-case sending pattern for packet-switched networks in terms
+describe a worst-case sending pattern for circuit-switched networks in terms
 of resource utilization.
 Then, describe a best-case pattern.
 
