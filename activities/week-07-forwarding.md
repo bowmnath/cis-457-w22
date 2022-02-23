@@ -74,7 +74,10 @@ this is... (forwarding or routing)?
 14. List a few kinds of guarantees that could be provided by a network layer.
 What guarantees are provided by the internet's network layer?
 
-15. Where would queueing delays most likely occur in a router under each of the
+15. What are some possible benefits of the internet's no-frills network service
+model?
+
+16. Where would queueing delays most likely occur in a router under each of the
 following circumstances?
 (Some of these may not result in excessive queueing at all.)
 * The switching fabric is significantly slower than the input ports
@@ -82,7 +85,17 @@ following circumstances?
 * The routing is done by a single routing processor instead of locally on each
   port
 
-Consider the following routing table.
+17. You are in an airport on your way to Tokyo.
+You come to an intersection with three signs:
+* Left: Flights to Europe
+* Straight ahead: Flights to Japan
+* Right: Flights to Asia
+
+More than one of these signs may seem relevent to you.
+Which one do you follow?
+What does this have to do with forwarding or routing?
+
+18. Consider the following routing table.
 ```
 Destination address range           | Link interface
 ---                                 | ---
@@ -99,19 +112,98 @@ Give the link interface for each of the following addresses:
 
 Note: `10100010b = 162`, `10100011b = 163`, and `11100000b = 224`.
 
-16. Assume a router has 5 input ports and 5 output ports.
+19. Given a destination IP `dest` and a list `forwards` containing
+`(IP prefix, link interface)` pairs,
+write pseudocode for how you would determine the link interface to send `dest`
+out.
+(This can be fairly rough pseudocode because we have a limited amount of time.)
+How long does your code take to run?
+Based on this,
+how much benefit do you think there is to a router to have something like TCAM
+(special hardware designed to find a longest-prefix match)?
+
+20. In lecture, you learned about destination-based vs generalized forwarding.
+What are some concerns other than its destination that might affect how a
+packet is forwarded?
+
+21. Imagine you are stuck at a stop sign.
+You want to turn right, and you are behind someone turning left.
+The road is very busy with right-to-left traffic,
+and the left-to-right direction is completely clear.
+Something very similar to this frustrating scenario can happen inside routers.
+Explain when this can happen and what term we use for it.
+
+For the next few questions,
+consider the following scenario.
+A major city has decided to save money by replacing its postal service with
+a distributed service that calls on many citizens to play their part.
+The city is laid out on a perfect grid,
+and at each intersection is a citizen-postmaster.
+The system works as follows:
+* each morning, the chief postmaster creates a set of personalized instructions
+  for every citizen-postmaster
+* when they have a letter to pass on,
+  a citizen-postmaster will consult their instructions to decide which of the
+  four neighboring intersections to run it to
+* because postmasters are often away from their intersections,
+  each has a designated table at their intersection for incoming mail to be
+  placed on
+
+22. Which of these can afford to take longer:
+* a chief postmaster deciding on a citizen-postmaster's instructions, or
+* a citizen-postmaster deciding which intersection to run to next?
+
+What does this say about the relative speed requirements of the data and
+control planes on the internet?
+
+23. A citizen-postmaster is clearly meant to be a router.
+What aspects does a citizen-postmaster share with a router?
+(I.e., map the parts of their job to the parts of a router).
+Some features found in routers do not exist in the above scenario.
+
+24. There is a critical inefficiency in the above scenario compared to how
+forwarding would be done in an actual router
+(and I don't just mean the fact that it involves humans).
+What makes the forwarding process as described above so inefficient?
+(Your answer to the previous question may be helpful here.)
+If you had the budget for more employees,
+how could you modify the scenario to make it more resemble an actual router
+that performs efficient forwarding?
+
+25. Assume a router has 5 input ports and 5 output ports.
 What is the maximum number of packets that can be moved across the switching
 fabric at once using
 * a bus?
 * a crossbar?
+
+26. Router A is connected to several extremely busy links.
+Router B, which has the same hardware as Router A,
+is connected to links that are not very busy.
+* For which router, if either, is the queuing policy more important?
+* If we remove the assumption that the routers have the same hardware,
+  how might that change the answer, if at all?
 
 For the next few questions, assume five packets arrive in the queue of an
 output port of a router at roughly the same time.
 We refer to the packets simply as 1, 2, 3, 4, 5, based on the order of their
 arrival.
 
-17. How will the packets be scheduled using priority scheduling if odd-numbered
+27. How will the packets be scheduled using priority scheduling if odd-numbered
 packets are high-priority and even-numbered packets are low-priority?
 
-18. How will the packets be scheduled using round robin scheduling if
+28. How will the packets be scheduled using round robin scheduling if
 packets 1 and 4 are one class and packets 2, 3, and 5 are another class?
+
+29. How will the packets be scheduled using weighted fair queuing if
+* odd packets are one class and even packets are another, and
+* the odd packets get 2/3 of the time (i.e., a 2:1 ratio)?
+
+30. The professor generally walks around the classroom group-by-group and asks
+members of the particular group whether they have any questions.
+If this were the only way for questions to be asked of the professor,
+what type of scheduling would this most remind you of?
+
+31. If, completely hypothetically, one group rarely asked questions,
+the professor might spend more time moving between the other groups and only
+occaisionally stop by that group.
+What queuing setup would this remind you of?
