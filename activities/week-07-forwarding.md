@@ -109,6 +109,7 @@ Give the link interface for each of the following addresses:
 * 162.3.2.1
 * 161.3.2.1
 * 161.253.2.1
+* 163.253.2.1
 
 Note: `10100010b = 162`, `10100011b = 163`, and `11100000b = 224`.
 
@@ -207,3 +208,51 @@ what type of scheduling would this most remind you of?
 the professor might spend more time moving between the other groups and only
 occaisionally stop by that group.
 What queuing setup would this remind you of?
+
+Switching gears to the IP protocol...
+
+32. Explain the purpose of the time-to-live field in an IPv4 datagram header.
+
+33. If a single faulty router on a network *incremented* TTL instead of
+decrementing it,
+how bad would it be for the network as a whole?
+
+34. Why does including both TTL and a checksum make IPv4 less efficient?
+
+35. There are two ways that an IPv4 receiver can tell that a datagram it
+receives is a fragment.
+What are they?
+Must both indications be present in every fragment?
+
+36. Is it possible for an IP datagram successfully traverse several links
+before being fragmented,
+or must fragmentation occur at the first link?
+If it is possible, explain why or give an example of how this could happen.
+If it is not possible, explain why not.
+
+37. Two movers are trying to get a treadmill out of a house.
+They get into a narrow doorway and need to disassemble it before they can
+continue.
+Should they reassemble the treadmill as soon as they get through the doorway?
+Why or why not?
+What does this have to do with IP datagrams?
+
+38. A datagram has a length of 4500 bytes and it reaches a link with a MTU of
+1500 bytes.
+How many fragments will it be broken into? (Careful.)
+
+39. Give the `length`, `fragflag`, and `offset` for each of the datagrams
+resulting from the scenario in the previous question.
+
+40. An IP receiver receives packets with the following fields:
+```
+length |  ID | fragflag | offset |
+   --- | --- |      --- |    --- |
+  1500 |   0 |        1 |      0 |
+  1500 |   1 |        0 |    185 |
+```
+
+Are there any fragments that have not yet been received?
+If so, what values for these fields would the missing packet(s) need to have to
+be sure everything was received?
+If not, how can you tell?
