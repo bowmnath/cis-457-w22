@@ -95,17 +95,82 @@ Then, find two addresses that have the same `a` and `b`,
 have different `c`,
 and reside on the same subnet as one another.
 
-18. Why is it important that DHCP requests and replies include a transaction ID?
+For the next few questions,
+consider the following scenario.
+A network administrator used to need to get every device hooked up to the
+company wifi manually.
+Anyone who came on the property would bring their laptop or phone to them,
+and they would look at their list of available IP addresses and type one in to
+the device.
+Being lazy,
+like all programmers,
+the admin set up a new system where people would instead send an email with
+subject line `IP Please` as soon as they arrived to the office,
+and the admin's computer was programmed to automatically reply with an
+available IP address.
 
-19. Why are DHCP addresses leased as opposed to given permanently?
+18. What protocol is the admin trying to reinvent?
+(Or, in other words, what protocol should they be using instead?)
 
-20. ISP A advertises that it services hosts 180.23.0.0/16.
+19. This scenario will not work as intended by the administrator.
+Why?
+
+20. Can you think of any variations on this idea that will make it work as
+intended?
+
+21. Due to COVID,
+a major fast food chain starts using a take-a-ticket system so that customers
+do not need to stand near one another in line.
+As one of their first customers that day, you get ticket #7.
+When you go back a few months later,
+you are given ticket #57934.
+This large number is kind of inconvenient to say, write down, etc.
+What lesson from networking did the fast food company fail to take in?
+
+22. Why is it important that DHCP requests and replies include a transaction ID?
+
+23. Why are DHCP addresses leased as opposed to given permanently?
+
+For the next two questions,
+consider a lazy host that does not want to send a DHCP discover message.
+Instead, it listens for a DHCP offer message that is triggered by someone
+else's discover message.
+
+24.  Why is it possible for the lazy host to do this in the first place
+(i.e., why is it able to learn what address was offered to another host)?
+
+25. If the lazy host sends a DHCP request for that offered IP address,
+and the original host also sends a request for that address,
+are there now two hosts that both believe they have the same IP address?
+If so, what problems does this cause?
+If not, why not?
+
+26. ISP A advertises that it services hosts 180.23.0.0/16.
 ISP B advertises that it services hosts 180.23.17.0/24.
 Where will packets to the following destinations be routed?
 * 180.23.16.5
 * 180.23.17.2
 
-21. Consider a subnet 10.0.0.0/24 residing behind a NAT.
+27. An ISP owns 8192 IPv4 addresses.
+Which of the following will make for simpler routing tables elsewhere on
+the internet?
+* The ISP owns one chunk of 8192 addresses
+* The ISP owns four chunks of 2048 addresses
+
+Why?
+
+28. ISP A owns addresses `234.27.2.0` through `234.27.16.0`.
+It wants to sell some of them to ISP B,
+which serves hosts on the other side of the world.
+Is it possible for ISP B to buy just `234.27.4.0` through `234.27.8.0`?
+Why or why not?
+
+29. An ISP has 8192 addresses available.
+A customer of that ISP wants 33 IP addresses.
+Is it possible for the ISP to satisfy that request exactly?
+Why or why not?
+
+30. Consider a subnet 10.0.0.0/24 residing behind a NAT.
 The internet-facing IP address of the gateway router is 270.33.9.4.
 Host 10.0.0.2 sends a DNS query (port 53) to 138.75.90.2.
 Give the source IP, source port, destination IP, and destination port of the
@@ -117,9 +182,9 @@ choose a random number that is sensible.
 * DNS response while in public internet
 * DNS response within subnet
 
-22. Why is it possible (sort of) for two hosts on the internet to have the IP
+31. Why is it possible (sort of) for two hosts on the internet to have the IP
 address 192.168.2.2?
 
-23. What is the main reason for the transition to IPv6?
+32. What is the main reason for the transition to IPv6?
 Why might routers be able to handle IPv6 packets more efficiently than IPv4
 packets?
