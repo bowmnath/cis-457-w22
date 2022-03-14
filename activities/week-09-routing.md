@@ -1,25 +1,55 @@
-As noted on Piazza,
-you can turn in answers to this activity for extra credit on the midterm exam.
-See the relevant Piazza note for details.
-
-There is no need to rush through discussion to answer all of these on the day
-of class --
-any questions that we do not discuss will not be due as part of the extra
-credit assignment for the week.
-If you are not sure what needs to be filled out for a given week,
-please feel free to ask.
-
-I will be dropping in and out of rooms to facilitate to the discussions and in
-case you have any questions.
-Think of it like me walking around the classroom and listening to different
-groups.
-You can also flag me down in Zoom if you have a question even if I'm not in the
-room
-(I think the button in Zoom looks like a question mark).
-
-Note: some questions are taken entirely or in part from your textbook.
-
 # General Questions
+
+1. Cities A and C are joined by a road that goes through City B.
+   City B has a law against driving personal cars on their roads --
+   they allow only semis.
+   A driver who wants to get from City A to City C must load their car into
+   a semi to travel through City B.
+   When they arrive at City C, they can unload their car and continue as usual.
+   How does this relate to routers and IP?
+
+2. How many IPv6 addresses are there?
+   How does this compare to the number of IPv4 addresses?
+
+   Assume every IPv4 address were used up.
+   How many IPv6 addresses could be assigned to every single IPv4-addressed
+   host before the IPv6 address space was exhausted?
+
+3. Are there more IPv6 addresses or...
+    * stars in the known universe?
+    * grains of sand on the earth?
+    * Pokemon?
+
+4. If you order a meal at SimpleBurger,
+   you do not get to choose much about your food.
+   Every meal is a plain beef patty and a side of plain fries.
+   At BetterBurger,
+   you can customize by adding pickles, onions, ketchup, and so on to your
+   order.
+   What might be an advantage to ordering at SimpleBurger?
+   Is there any way to get the "features" of BetterBurger while retaining the
+   advantages of SimpleBurger?
+   What does this have to do with IP?
+
+5. Your professors at GVSU have come up with a new IP version (IPv457) that is
+   obviously superior to IPv6.
+   They propose that this new version be adopted throughout the Internet by
+   2025.
+   Does this strike you as reasonable?
+   Why or why not?
+
+6. IPv6 does not include fragmentation.
+   However, it is still possible that an IPv6 datagram ends up fragmented
+   as it travels from its source to its destination.
+   How can this happen?
+
+<!--
+7. An IPv6 address is usually broken into chunks of four hex digits with the
+   chunks separated by colons.
+   How many chunks of four are the addresses broken into?
+   (Try to figure this out without looking it up --
+   use what you know about the number of possible IPv6 addresses).
+-->
 
 1. Explain the relationship between forwarding and routing.
 
