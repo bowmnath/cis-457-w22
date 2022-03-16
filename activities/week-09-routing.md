@@ -56,15 +56,32 @@
 8. What are some different criteria that might be used in determining which
    path to take through the network?
 
-9. What is the difference between static and dynamic routing?
+9. You are seated in a large, dark room,
+   and you want to pass a message to your friend Jim Kirk who is far away in
+   the room.
+   You ask the three people sitting by you whether if you pass them a note they
+   can eventually get the message to Jim.
+   One of them says they don't know where he is,
+   another says they can eventually get the message but it will be slow,
+   and the third says they are just a few seats away from him.
+   What kind of routing algorithm,
+   distance-vector or link-state,
+   are you using to determine where to pass your note?
+
+10. What is the difference between static and dynamic routing?
    Give an advantage and disadvantage of each.
 
-10. Consider a router that knows the minimum distance from each of its neighbors
+11. Consider a router that knows the minimum distance from each of its neighbors
     to each end host on the system.
     That router is running a... (link state or distance vector)
     ...routing algorithm.
 
-11. Running Dijkstra's algorithm with node `u` as the starting point results in
+12. Run Dijkstra's algorithm on the image below to find the shortest path from
+    `a` to each other node.
+
+    ![example graph](images/dijkstra-example-1.png)
+
+13. Running Dijkstra's algorithm with node `u` as the starting point results in
     the following table of distances and predecessors in the format used in the
     lecture video once the algorithm has finished.
     ```
@@ -75,20 +92,27 @@
     What is the least-cost path from `u` to `v`?
     What is the cost of that path?
 
-12. Using the results above,
+14. Using the results above,
     write out the forwarding table for the router `u`.
 
-13. Which of the following could be sensible choices to use as link costs?
+15. Which of the following could be sensible choices to use as link costs?
     * Physical distance
     * 1/(Physical distance)
     * Congestion
     * Link bandwidth
     * 1/(Link bandwidth)
 
-14. Explain how using current congestion to determine link weights can cause an
-    algorithm to fail if it is not implemented carefully.
+16. A busy highway forks into two roads that eventually end up in the same
+    town.
+    On Monday, most of the drivers go left at the fork.
+    This makes the left fork slow,
+    and they hear from their friends who went right that it was faster.
+    So, on Tuesday, most of the drivers go right at the fork,
+    resulting in the right fork being substantially slower.
 
-15. Consider a three-router network with routers `A`, `B`, and `C`.
+    What is the corresponding problem that can occur in routing?
+
+17. Consider a three-router network with routers `A`, `B`, and `C`.
     The initial distance vector for `A` is given below.
     ```
     |    | A   | B   | C   |
@@ -104,16 +128,65 @@
     ```
     What is the updated distance vector for `A`?
 
-16. Why is it useful to have different protocols for intra-AS vs inter-AS
+18. You and your best friend are discussing routing algorithms at the bar on
+    Friday night as you always do.
+    Your friend claims that distance-vector algorithms are horribly inefficient
+    in the long run because all of the routers are constantly passing their
+    distance vectors back and forth with their neighbors.
+    Do you agree or disagree? Why?
+
+19. In the example from two questions ago,
+    would `A` have sent a new distance vector to its neighbors after the
+    update?
+    If so, change the vectors from `B` and `C` to ones that would *not* result
+    in `A` sending an updated vector.
+    If not, change the vectors from `B` and `C` to ones that *would* result
+    in `A` sending an updated vector.
+
+20. You and your friends often share textbooks to save on costs.
+    Typically, if you need to get a textbook to your friend Nyota,
+    you give it to your friend Spock because they live near one another.
+    If Spock asks you whether you have a convenient way to get a book to Nyota,
+    you might say "No" because you typically would use him as your
+    intermediary.
+    Where does this same idea come up in routing, and why?
+
+21. Imagine you are trying to get to a distant town,
+    and your trip will involve several steps:
+    flights, train rides, buses, and so on.
+    No matter which route you take,
+    your first step is going to be to have one of your friends drop you off at
+    an airport near them.
+    Consider two situations:
+
+    1. You use the internet to get information about various legs of the
+       trip -- how long is the bus ride from A to B,
+       how long is the plane ride from C to D, and so on.
+       You then ask each of your friends how long it takes to get from their
+       house to the nearest airport to them,
+       and you use the resulting information to decide which friend will drop
+       you off for the first leg of your trip.
+
+    2. You ask each friend "how long will it take to get from your house to my
+       final destination?"
+       All of your friends give you their best estimate,
+       and you use that information to decide which one will drop you off for
+       the first leg of your trip.
+
+    If you are concerned that one of your friends, Khan, might be a liar,
+    which scenario is safer for you? Why?
+    How does this relate to routing?
+
+22. Why is it useful to have different protocols for intra-AS vs inter-AS
     routing?
 
-17. Why is it useful for OSPF to authenticate its messages?
+23. Why is it useful for OSPF to authenticate its messages?
 
-18. In your own words, what do the `AS-PATH` and `NEXT-HOP` attributes of BGP
+24. In your own words, what do the `AS-PATH` and `NEXT-HOP` attributes of BGP
     messages mean?
     Why are they important?
 
-19. Consider routing a packet to a distant prefix `X`.
+25. Consider routing a packet to a distant prefix `X`.
     For each of the following, state whether it is the responsibility of BGP
     or OSPF.
     * Determining which ASes packet will go through along the way.
@@ -121,6 +194,6 @@
     * Determining which outgoing link is used to forward packets toward gateway
       router.
 
-20. Explain a few ways in which pure hot-potato routing,
+26. Explain a few ways in which pure hot-potato routing,
     without consideration of the other factors that go into BGP route selection,
     could lead to a "bad" choice of path.
