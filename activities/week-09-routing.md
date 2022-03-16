@@ -76,10 +76,10 @@
     That router is running a... (link state or distance vector)
     ...routing algorithm.
 
-12. Run Dijkstra's algorithm on the image below to find the shortest path from
-    `a` to each other node.
+![example graph](images/dijkstra-example-1.png)
 
-    ![example graph](images/dijkstra-example-1.png)
+12. Run Dijkstra's algorithm on the image above to find the shortest path from
+    `a` to each other node.
 
 13. Running Dijkstra's algorithm with node `u` as the starting point results in
     the following table of distances and predecessors in the format used in the
