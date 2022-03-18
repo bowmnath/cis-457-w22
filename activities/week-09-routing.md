@@ -186,7 +186,11 @@
     messages mean?
     Why are they important?
 
-25. Consider routing a packet to a distant prefix `X`.
+25. BGP is a distance-vector (actually, a path-vector) protocol.
+    Give a few reasons why this is a better fit for an inter-networking
+    protocol than a link-state protocol would be.
+
+26. Consider routing a packet to a distant prefix `X`.
     For each of the following, state whether it is the responsibility of BGP
     or OSPF.
     * Determining which ASes packet will go through along the way.
@@ -194,6 +198,11 @@
     * Determining which outgoing link is used to forward packets toward gateway
       router.
 
-26. Explain a few ways in which pure hot-potato routing,
+27. Explain a few ways in which pure hot-potato routing,
     without consideration of the other factors that go into BGP route selection,
     could lead to a "bad" choice of path.
+
+28. A network admin decides to save disk space by uninstalling all programs
+    implementing the BGP protocol from any non-gateway router on the network
+    since they will not communicate with other ASes.
+    Is this a good idea? Why or why not?
