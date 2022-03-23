@@ -1,38 +1,26 @@
-As noted on Piazza,
-you can turn in answers to this activity for extra credit on the midterm exam.
-See the relevant Piazza note for details.
-
-There is no need to rush through discussion to answer all of these on the day
-of class --
-any questions that we do not discuss will not be due as part of the extra
-credit assignment for the week.
-If you are not sure what needs to be filled out for a given week,
-please feel free to ask.
-
-I will be dropping in and out of rooms to facilitate to the discussions and in
-case you have any questions.
-Think of it like me walking around the classroom and listening to different
-groups.
-You can also flag me down in Zoom if you have a question even if I'm not in the
-room
-(I think the button in Zoom looks like a question mark).
-
-Note: some questions are taken entirely or in part from your textbook.
-
 # General Questions
 
-1. Explain a few ways in which pure hot-potato routing,
-   without consideration of the other factors that go into BGP route selection,
-   could lead to a "bad" choice of path.
-
-2. What is the general purpose of ICMP?
-
-3. Although ICMP runs on top of IP,
+1. Although ICMP runs on top of IP,
    it is not considered part of the transport layer.
    Why not?
 
-4. Now that you know about ICMP,
-   briefly explain how `ping` works.
+2. Why is it helpful that ICMP does not run on top of TCP or UDP?
+
+3. In a post-apocalyptic wasteland with no Google maps but plenty of gasoline,
+   you are trying to create a map of the route from your town to a distant
+   city.
+   You send out a driver with an eigth of a tank of gas,
+   and when they have burned through half of it they come back and tell you
+   the furthest point they reached.
+   Then you send out a driver with a quarter of a tank of gas,
+   and they follow the same procedure.
+   You keep doing this until you send out a driver who reports back that they
+   successfully reached the city.
+   What networking tool have you recreated?
+   Are there any significant differences from the actual tool?
+
+4. What is the general purpose of ICMP
+   (i.e., why does it exist)?
 
 5. What is the difference between SNMP in request/response mode vs trap mode?
    (The purpose, not the header information.)
@@ -42,13 +30,49 @@ Note: some questions are taken entirely or in part from your textbook.
    One that is at least slightly different from the analogy in the lecture
    video would be preferable.
 
-7. Which of the following need to run link layer protocols?
+7. What is the "payload" of a link-layer frame
+   (i.e., what "data" does it contain)?
+
+8. Which of the following need to run link layer protocols?
     * Gateway router
     * Backbone router
-    * Web client
-    * Web server
+    * Host running a Web client
+    * Host running a Web server
 
-8. Consider the high-level description of error detection below.
+9. Error detection and correction have somewhat obvious upsides.
+   What are some downsides to error detection and/or correction?
+
+10. You and your friend are trying to play a game of chess over the phone
+    because you wanted to make a convenient metaphor for your networking
+    professor.
+    You tell them your moves (e.g., "knight to A-3") and they arrange the
+    pieces on the board.
+    You used to play over a land-line,
+    and you never bothered to repeat yourself.
+    One day you decide to move to walkie-talkies to save on your phone bill,
+    and your friend starts reading back every move to you to make sure they
+    heard you correctly.
+    What does this have to do with link-layer protocols?
+
+11. Pizza Shack wants to be environmentally friendly,
+    so they don't have delivery drivers.
+    Instead, they post a delivery runner at every intersection,
+    and each runner will pass the pizza along to the next runner so that nobody
+    needs to run too far.
+
+    Unfortunately, all of the jostling of the pizzas is leading to a lot of
+    complaints from customers who open their boxes to find smashed food.
+    To solve this,
+    Pizza Shack trains all of their runners in pizza surgery.
+    When a pizza arrives at a runner,
+    they will check it for smashedness and repair the pizza if necessary.
+
+    What are some upsides and downsides to this system?
+
+12. In networking terms,
+    how would different layers have come into play in the previous example?
+
+13. Consider the high-level description of error detection below.
    What is wrong with this description?
 
    The sender appends extra bits to the message according to some agreed-upon
@@ -60,7 +84,7 @@ Note: some questions are taken entirely or in part from your textbook.
    it passes the payload up to the next layer.
    Otherwise, it discards the frame.
 
-9. Consider parity-checking system where parity bit ensures sum is odd.
+14. Consider parity-checking system where parity bit ensures sum is odd.
    A sender sends the following (`message | parity bit`).
 
    ```
@@ -73,7 +97,7 @@ Note: some questions are taken entirely or in part from your textbook.
    11000000 | 1
    ````
 
-10. Assume we are using a two-dimensional parity where the parity bit ensures
+15. Assume we are using a two-dimensional parity where the parity bit ensures
     the sum is odd.
     (Note that this is different from the two-dimensional parity scheme
     described in the slides.)
@@ -89,7 +113,7 @@ Note: some questions are taken entirely or in part from your textbook.
     0 1 0 0 | 0
     ```
 
-11. Using a cyclic redundancy check with the generator `1101`,
+16. Using a cyclic redundancy check with the generator `1101`,
     append the three-bit value `R` to the message `1011010`.
     You can check your answer by performing the CRC as the receiver using your
     determined value of R.
