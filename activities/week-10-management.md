@@ -73,29 +73,29 @@
     how would different layers have come into play in the previous example?
 
 13. Consider the high-level description of error detection below.
-   What is wrong with this description?
+    What is wrong with this description?
 
-   The sender appends extra bits to the message according to some agreed-upon
-   rule.
-   The receiver receives the original message plus the extra bits.
-   It then runs an algorithm to determine whether the received versions of the
-   message and extra bits match.
-   If the receiver confirms the received frame is identical to the original,
-   it passes the payload up to the next layer.
-   Otherwise, it discards the frame.
+    The sender appends extra bits to the message according to some agreed-upon
+    rule.
+    The receiver receives the original message plus the extra bits.
+    It then runs an algorithm to determine whether the received versions of the
+    message and extra bits match.
+    If the receiver confirms the received frame is identical to the original,
+    it passes the payload up to the next layer.
+    Otherwise, it discards the frame.
 
 14. Consider parity-checking system where parity bit ensures sum is odd.
-   A sender sends the following (`message | parity bit`).
+    A sender sends the following (`message | parity bit`).
 
-   ```
-   11001100 | 1
-   ```
+    ```
+    11001100 | 1
+    ```
 
-   If the receiver receives the following, what happens?
+    If the receiver receives the following, what happens?
 
-   ```
-   11000000 | 1
-   ````
+    ```
+    11000000 | 1
+    ````
 
 15. Assume we are using a two-dimensional parity where the parity bit ensures
     the sum is odd.
@@ -159,3 +159,35 @@
                    000  <-- verified
     ```
     -->
+
+17. As people, we share the medium of sound when communicating.
+    Give examples of human protocols for sharing this medium,
+    both in one-on-one situations and scenarios involving multiple people.
+
+18. You book lists "fully decentralized" as a desirable characteristic of
+    a multiple-access protocol.
+    Why do you think this is a desirable characteristic?
+
+19. For each of the four desirable characteristics of a medium-access protocol
+    listed below
+    (taken from your textbook),
+    give an example of a protocol that has that characteristic but that is
+    a bad or imperfect protocol for some other reason.
+    (These do not necessarily all need to be practical protocols.)
+    * when one node wants to transmit,
+      it can send at rate R (the full rate of the channel)
+    * when M nodes want to transmit,
+      each can send at average rate R/M
+    * fully decentralized
+    * simple
+
+20. For each of the following scenarios,
+    decide what the shared medium is and determine whether the protocol is more
+    similar to TDMA or FDMA:
+    * Your car radio has several stations it can tune into.
+    * Airplanes follow a schedule so that two planes are never on the runway
+      together.
+    * A radio station plays songs individually throughout the day,
+      rather than all together.
+    * Satellites orbit at various altitudes above the earth so that they do not
+      crash into one another.
