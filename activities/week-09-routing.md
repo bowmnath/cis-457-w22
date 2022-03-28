@@ -187,10 +187,38 @@
     Why are they important?
 
 25. BGP is a distance-vector (actually, a path-vector) protocol.
-    Give a few reasons why this is a better fit for an inter-networking
-    protocol than a link-state protocol would be.
+    Do you think that this is a coincidence,
+    or are there any reasons why a distance-vector protocol is naturally a
+    better fit for an inter-networking protocol than a link-state protocol
+    would be?
 
-26. Consider routing a packet to a distant prefix `X`.
+26. As a network admin,
+    you decide that you do not care much which other ASes your packets are
+    routed through --
+    you care only how long they will take to get to their final destination.
+    Hoping that others are of a similar mind,
+    you modify your routers' BGP protocol to send a `DISTANCE` value instead
+    of the `AS-PATH` value in order to help out your neighbors.
+    Will your network see any benefit from this change?
+    Why or why not?
+
+27. Consider an internet company named Nile that sells and ships various
+    products and has a massive distribution system across the US that includes
+    several warehouses in every state.
+    Even though Nile is all one company,
+    warehouses from Maine do not generally ship directly to warehouses in
+    Arizona.
+    Instead, they ship to regional centers,
+    and the regional centers ship to a national center.
+    The national center then ships to a different regional center who is
+    responsible for shipping to the final destination warehouse.
+    What is the routing equivalent of this situation?
+
+28. Is an AS required to release detailed information about its internal
+    structure in order to connect to the public internet.
+    Why or why not?
+
+29. Consider routing a packet to a distant prefix `X`.
     For each of the following, state whether it is the responsibility of BGP
     or OSPF.
     * Determining which ASes packet will go through along the way.
@@ -198,11 +226,42 @@
     * Determining which outgoing link is used to forward packets toward gateway
       router.
 
-27. Explain a few ways in which pure hot-potato routing,
+30. Which, if either, is more likely to receive widespread adoption:
+    a new protocol that improves on BGP,
+    or a new protocol that improves on OSPF?
+    Why?
+
+![bgp-example](images/bgp-example-1.png)
+
+31. In the image above,
+    large circles represent ASes.
+    Assume that when `a` receives a packet destined for `f`,
+    it will forward the packet to `e` to eventually be sent out of the AS via
+    `c`.
+    When `a` makes that choice,
+    how does it modify the header in order to let `e` know what it intends
+    before forwarding `e` the packet?
+
+32. Explain a few ways in which pure hot-potato routing,
     without consideration of the other factors that go into BGP route selection,
     could lead to a "bad" choice of path.
 
-28. A network admin decides to save disk space by uninstalling all programs
+33. A network admin decides to save disk space by uninstalling all programs
     implementing the BGP protocol from any non-gateway router on the network
     since they will not communicate with other ASes.
     Is this a good idea? Why or why not?
+
+34. You and your neighbor both own large farms.
+    Your neighbor decides to open up a small carnival on their land.
+    Because you are on friendly terms,
+    you allow them to put up a sign on your land advertising for their
+    carnival,
+    and you even allow a small footpath through your woods that people who
+    want to get to the carnival can use.
+
+    After a while,
+    you get sick of all of the foot traffic,
+    so you simply take down the sign,
+    and nobody bothers to walk that way because they do not know the carnival
+    can be reached through your woods.
+    Explain how something similar can happen in routing.
