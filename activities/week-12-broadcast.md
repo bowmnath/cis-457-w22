@@ -86,20 +86,86 @@
     What is the probability that they collide with each other a fourth time in
     a row?
 
-<!--
-12. How are turn-taking protocols (e.g., polling) similar to TDMA?
+14. There is a major downside to channel-partitioning schemes
+    (what is it?).
+    If you were trying to make a simple improvement to them to get around this,
+    what would it look like?
+    Does your solution resemble any schemes we have discussed in class?
+
+15. How are turn-taking protocols (e.g., polling) similar to TDMA?
     How are they different?
 
-13. Compared to an IP address, a MAC address gives {more, less} information
+16. Imagine a classroom in which the professor is concerned about shy students.
+    Every few minutes,
+    she calls on each student in turn whether or not they have a question.
+    If the student has a question,
+    they ask it.
+    Otherwise, they just say "pass."
+    What are some upsides and downsides to this scheme?
+    What networking idea does this remind you of? 
+
+17. You and your friends argue a lot,
+    so you have decided to make your conversations more civil by ensuring
+    nobody talks over anyone else.
+    To do so,
+    you design a glamorous Speaker Sash,
+    and promise that you will never speak in one another's presence unless
+    you are wearing the sash.
+    At the next party,
+    your friend Eleanor really likes the sash,
+    so she puts it on and leaves the party.
+    What is the problem here?
+    How can something similar arise in a medium-access control protocol?
+
+18. You decide that polling is a bad idea because the controller will poll
+    other hosts even when those hosts have nothing to say.
+    You decide instead to have hosts announce when they would like control
+    of the medium.
+    Why might this idea lead to more complications than polling?
+
+19. Your friend believes that turn-taking protocols are almost meant to be
+    hybrids of the other two kinds.
+    He claims that turn-taking protocols work better in many cases,
+    but that they don't do as well as the other protocols in extreme cases,
+    such as having just one sender.
+    Do you agree or disagree?
+
+20. Assume my name is Inigo.
+    Whether I am visiting the store,
+    reading at the library,
+    or watching TV at home,
+    my name is still Inigo.
+    Even if I move homes to a different address,
+    my name is still Inigo.
+    What is the corresponding idea in networking?
+    This is example is very different from that idea in at least one key way --
+    what is it?
+
+21. Compared to an IP address, a MAC address gives {more, less} information
     about a node's location.
 
-14. What is one reason MAC addresses are useful when sending on a local network?
+<!--
+14. What is one reason MAC addresses are useful when sending on a local
+    network?
     In other words, why not just send directly to a certain IP address?
 
 15. What is an ARP table?
     How are the entries in an ARP table determined?
+-->
 
-16. Assume host `A` is on one network and host `B` is on a different network
+22. You move into a dorm and are too shy to ask anyone's name.
+    Instead, you wait until you hear someone else talking about
+    Harry in room number 4,
+    you write down that room number 4 contains Harry so that you can use
+    that person's name later.
+    How does this relate to MAC addresses?
+<!--
+What if you make the request, rather than someone else.
+
+Is there a TTL on this information?
+-->
+
+23. Assume host `A` is on one network and host `B` is on a different network
     that is several hops away.
     Which of the following change during a packet's journey from `A` to `B`?
     (There is more than one possible answer depending on what assumptions you
@@ -108,4 +174,3 @@
     * Destination IP address
     * Source MAC address
     * Destination MAC address
--->
