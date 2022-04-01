@@ -144,28 +144,30 @@
 21. Compared to an IP address, a MAC address gives {more, less} information
     about a node's location.
 
-<!--
-14. What is one reason MAC addresses are useful when sending on a local
-    network?
-    In other words, why not just send directly to a certain IP address?
+22. To avoid bias in exam grading,
+    a professor asks all students to write down their student ID numbers rather
+    than their names at the top of the exam.
+    Then, when returning exams, the professor simply calls out to the whole
+    class, for example,
+    "Who is 457158357?"
+    and the corresponding student will reply with their name so the professor
+    can hand them the exam.
 
-15. What is an ARP table?
-    How are the entries in an ARP table determined?
--->
+    What networking protocol is the professor making use of here?
+    If the professor has a very good memory,
+    why might this system not be effective in the long term for avoiding bias?
 
-22. You move into a dorm and are too shy to ask anyone's name.
+23. You move into a dorm and are too shy to ask anyone's name.
     Instead, you wait until you hear someone else talking about
     Harry in room number 4,
     you write down that room number 4 contains Harry so that you can use
     that person's name later.
     How does this relate to MAC addresses?
-<!--
-What if you make the request, rather than someone else.
 
-Is there a TTL on this information?
--->
+24. In the example above,
+    is there a TTL to the information you are gathering?
 
-23. Assume host `A` is on one network and host `B` is on a different network
+25. Assume host `A` is on one network and host `B` is on a different network
     that is several hops away.
     Which of the following change during a packet's journey from `A` to `B`?
     (There is more than one possible answer depending on what assumptions you
