@@ -1,24 +1,3 @@
-As noted on Piazza,
-you can turn in answers to this activity for extra credit on the midterm exam.
-See the relevant Piazza note for details.
-
-There is no need to rush through discussion to answer all of these on the day
-of class --
-any questions that we do not discuss will not be due as part of the extra
-credit assignment for the week.
-If you are not sure what needs to be filled out for a given week,
-please feel free to ask.
-
-I will be dropping in and out of rooms to facilitate to the discussions and in
-case you have any questions.
-Think of it like me walking around the classroom and listening to different
-groups.
-You can also flag me down in Zoom if you have a question even if I'm not in the
-room
-(I think the button in Zoom looks like a question mark).
-
-Note: some questions are taken entirely or in part from your textbook.
-
 # General Questions
 
 1. Assume all physical media involved and all ethernet adapters involved on a
@@ -38,6 +17,33 @@ Note: some questions are taken entirely or in part from your textbook.
 
 4. Ethernet can be considered both a ____-layer and a ____-layer protocol.
 
+5. You take a job doing office work for a small company with 8 other employees.
+   You boss hands you a memo to give to Tom,
+   but you have no idea who Tom is.
+   To make matters worse,
+   the office doors in the company are not labeled with people's names because
+   they just moved to a new building.
+   So, you make 7 copies and give them to everyone besides your boss herself.
+   Eventually, Tom sends a memo to Pam,
+   and you make a note of which office Tom came out of so that you can send
+   future messages directed at Tom directly to his office.
+   What is the networking equivalent of the system you have set up?
+
+6. Consider the office scenario above.
+   Would this system work better in an office with 8 employees are 800
+   employees?
+   Why?
+
+7. In the office scenario,
+   if the memo simply read
+   "Buy 100 reams of paper"
+   with no other text,
+   would you want to add additional information to it before making copies and
+   sending them?
+   Why or why not?
+   Would the networking equivalent of you as the "secretary" need to worry
+   about this?
+
 For the next few questions,
 consider the following image taken from the slides provided by the textbook
 authors.
@@ -46,7 +52,7 @@ not a router.
 
 ![switched ethernet](images/switched-ethernet.png)
 
-5. Consider the following statement:
+8. Consider the following statement:
 
    Before host A can send to host C,
    it must learn the MAC address of interface 1 of the switch.
@@ -55,21 +61,23 @@ not a router.
    how does A learn the MAC address?
    If not, why not?
 
-6. Assume all other hosts want to send to A at the same time.
+9. Assume all other hosts want to send to A at the same time.
    If the network is running 100 Mbps ethernet,
    what is the rate at which data is received by A?
 
-7. Give a few similarities and differences between a switch table and a routing
-   table.
+10. Give a few similarities and differences between a switch table and a routing
+    table.
 
-8. In the diagram above,
-   if B wanted to read frames meant for A,
-   how could it trick the switch into sending those frames to B?
+11. In the diagram above,
+    if B wanted to read frames meant for A,
+    how could it trick the switch into sending those frames to B?
 
-9. Assume the switching table for the network above is initially empty.
-   Host A sends to host B, then host B sends to host C.
-   What does the switching table look like after this process is complete?
+12. Assume the switching table for the network above is initially empty.
+    Host A sends to host B, then host B sends to host C.
+    What does the switching table look like after this process is complete?
 
-10. Give a disadvantage of having a very large switched-ethernet LAN.
+13. Give a disadvantage of having a very large switched-ethernet LAN.
 
+<!--
 11. Explain in your own words what a VLAN is.
+-->
