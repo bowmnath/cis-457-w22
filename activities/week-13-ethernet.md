@@ -1,18 +1,18 @@
 # General Questions
 
-1. Assume all physical media involved and all ethernet adapters involved on a
-   particular subnet run 100 Mbps ethernet.
+1. Assume all physical media involved and all Ethernet adapters involved on a
+   particular subnet run 100 Mbps Ethernet.
    Which will generally result in a higher effective throughput on the subnet?
-   * bus-based ethernet
-   * switched ethernet
+   * bus-based Ethernet
+   * switched Ethernet
 
    Why?
 
-2. Ethernet includes a cylcic redundancy check for bit errors.
-   Given that, is ethernet considered a reliable protocol?
+2. Ethernet includes a cyclic redundancy check for bit errors.
+   Given that, is Ethernet considered a reliable protocol?
    Why or why not?
 
-3. What is the purpose of the `type` field in the ethernet header?
+3. What is the purpose of the `type` field in the Ethernet header?
    What would be the analogous field in a transport layer header?
 
 4. Ethernet can be considered both a ____-layer and a ____-layer protocol.
@@ -30,7 +30,7 @@
    What is the networking equivalent of the system you have set up?
 
 6. Consider the office scenario above.
-   Would this system work better in an office with 8 employees are 800
+   Would this system work better in an office with 8 employees or 800
    employees?
    Why?
 
@@ -50,7 +50,7 @@ authors.
 Note that the hosts are connected via a *switch*,
 not a router.
 
-![switched ethernet](images/switched-ethernet.png)
+![switched Ethernet](images/switched-ethernet.png)
 
 8. Consider the following statement:
 
@@ -62,7 +62,7 @@ not a router.
    If not, why not?
 
 9. Assume all other hosts want to send to A at the same time.
-   If the network is running 100 Mbps ethernet,
+   If the network is running 100 Mbps Ethernet,
    what is the rate at which data is received by A?
 
 10. Give a few similarities and differences between a switch table and a routing
@@ -72,12 +72,44 @@ not a router.
     if B wanted to read frames meant for A,
     how could it trick the switch into sending those frames to B?
 
-12. Assume the switching table for the network above is initially empty.
+12. Why is the issue raised in the previous question typically not considered
+    a problem in practice?
+    (I.e., why do we not worry much about defending against this "attack"?)
+
+13. Assume the switching table for the network above is initially empty.
     Host A sends to host B, then host B sends to host C.
     What does the switching table look like after this process is complete?
 
-13. Give a disadvantage of having a very large switched-ethernet LAN.
+14. Give a disadvantage of having a very large switched-Ethernet LAN.
 
-<!--
-11. Explain in your own words what a VLAN is.
--->
+15. Consider the two scenarios below.
+    Explain which is more similar to ARP and which is more similar to a
+    self-learning switch and why.
+    * Scenario A: You are playing soccer (football) on a new team.
+      The play calls for you to pass to Lionel.
+      You shout their name ("Hey Lionel!") because you do not know their
+      jersey number.
+      Lionel responds with their number ("I'm #10!"),
+      and from that point on whenever you are supposed to pass to Lionel,
+      you pass to #10.
+    * Scenario B: You are a teaching assistant tasked with passing messages
+      between students and the professor during exams.
+      When a student passes a note to the professor,
+      you glance at the student's name on the note and record which seat they
+      are sitting in in case the professor writes a note back that you need
+      to deliver.
+
+16. Describe in general the similarities and differences between ARP and a
+    self-learning switch.
+    Consider both how they learn and their purpose.
+
+17. Unlike most previous protocols we have seen,
+    Ethernet specifies both header *and* footer information that should be
+    attached to a message.
+    However, the Ethernet header does not contain any information about
+    message length.
+    How does the Ethernet receiver know when the payload ends and the footer
+    begins?
+    (Note: this is something that Ethernet handles itself --
+    it does not look at the higher-layer package to determine the length of
+    the data.)
