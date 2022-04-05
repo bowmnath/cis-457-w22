@@ -157,17 +157,10 @@
     If the professor has a very good memory,
     why might this system not be effective in the long term for avoiding bias?
 
-23. You move into a dorm and are too shy to ask anyone's name.
-    Instead, you wait until you hear someone else talking about
-    Harry in room number 4,
-    you write down that room number 4 contains Harry so that you can use
-    that person's name later.
-    How does this relate to MAC addresses?
-
-24. In the example above,
+23. In the example above,
     is there a TTL to the information you are gathering?
 
-25. Assume host `A` is on one network and host `B` is on a different network
+24. Assume host `A` is on one network and host `B` is on a different network
     that is several hops away.
     Which of the following change during a packet's journey from `A` to `B`?
     (There is more than one possible answer depending on what assumptions you
