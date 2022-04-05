@@ -113,3 +113,71 @@ not a router.
     (Note: this is something that Ethernet handles itself --
     it does not look at the higher-layer package to determine the length of
     the data.)
+
+# Review questions
+
+At this point in the course,
+you know the basics of at least one protocol at every layer from link up
+through application and hopefully how they are used together.
+We still have a few topics left to learn,
+but in honor of the review lecture
+("A Day in the Life of a Web Request")
+we will take a high-level look back at some previous topics in this next set of
+questions.
+
+18. If a host is going to run a web server,
+    it must support protocols from which layers of the protocol stack?
+    List a few protocols in particular that the host must support and why.
+
+19. What is the payload of an IP datagram?
+
+20. If my computer is connected to my router through a reliable link-layer
+    protocol,
+    why might TCP still be useful in supporting reliable data transfer?
+
+21. Consider the opposite case:
+    If most traffic on the internet were carried via TCP
+    (which is not necessarily true -- I was unable to find numbers for this),
+    why might reliable transfer at the link layer still be useful in some
+    cases?
+
+22. Your manager requests that you upload your reports in a specific format.
+    You realize that the format is inefficient,
+    so you upload yours in a slightly different, but far superior, format.
+    If your manager is using a script to aggregate reports from all employees,
+    what is the likely result of your cleverness?
+    How could something similar come into play in networking?
+
+23. Which are more common on the internet:
+    * nodes that understand the HTTP protocol, or
+    * nodes that understand the IP protocol?
+    
+    Why?
+
+24. Is a DHCP request sent over IP?
+    * If so, does it have a (meaningful) source address?
+      Why or why not?
+    * If not, why not?
+
+25. UDP is a more bare-bones protocol than TCP,
+    but it is used as the transport layer protocol for DNS,
+    and DNS is very important to allowing the internet to function correctly.
+    Why might UDP be the protocol of choice for DNS?
+
+26. From a programmer's perspective,
+    which do you believe are more similar to each other:
+    * a TCP client socket and a UDP client socket, or
+    * a TCP server socket and a UDP server socket?
+
+    Explain.
+
+27. What is the purpose of a forwarding table in a router.
+    Explain (in as much detail as you care to) how a forwarding table is
+    created for an internet-connected router.
+
+28. Recall that IPv6 uses a 128-bit address space.
+    Also recall that there were 150 Pokemon in the first generation.
+    For how many generations will we have enough IPv6 addresses to label all
+    Pokemon if
+    * the number of Pokemon grows by 150 each generation?
+    * the number of Pokemon doubles every generation?
