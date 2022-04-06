@@ -181,3 +181,20 @@ questions.
     Pokemon if
     * the number of Pokemon grows by 150 each generation?
     * the number of Pokemon doubles every generation?
+
+29. Large fast-food chains will sometimes have multiple lanes in their
+    drive-throughs.
+    Typically the lanes will take turns when merging into one lane,
+    so a driver from Lane 1 will go, then Lane 2, then Lane 1 again, and so on.
+    What kind of queueing policy is this if we assume...
+    * drivers in both lanes take the same amount of time to order?
+    * drivers in Lane 1 take twice as long to order,
+      so two cars from Lane 2 get through for every car in Lane 1?
+
+30. Give a few examples of types of DNS records that do *not* contain IP
+    addresses and explain what they contain instead.
+
+31. Consider switched Ethernet with a full-duplex connection,
+    meaning that traffic can move in both directions at the same time without
+    causing a collision.
+    Why is a random-access MAC protocol a good choice in this case?
