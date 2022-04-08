@@ -198,3 +198,81 @@ questions.
     meaning that traffic can move in both directions at the same time without
     causing a collision.
     Why is a random-access MAC protocol a good choice in this case?
+
+# Wireless questions
+
+1. When you are connected to a WiFi network at someone's home,
+   you are usually connected directly to their wireless router.
+   Why does this wireless network not require a base station?
+
+2. Consider a fairly standard wireless setup where several hosts are connected
+   to a base station that is then connceted to a router via Ethernet.
+   A friend from your networking class makes the observation that connecting
+   in this way is similar to using non-switched Ethernet to connect to the
+   router.
+   What are your thoughts on your friend's analogy?
+
+3. Give some similarities and some differences between a wireless base station
+   and an Ethernet switch.
+
+4. You and some friends decide to take a trip to the deserted wasteland of
+   Houghton, MI.
+   You all bring your WiFi-capable computers,
+   but there are no wireless access points to connect to.
+   Is there any way you can use WiFi to send messages back and forth amongst
+   each other while you are there?
+   Can you connect to the larger internet?
+
+5. Due to soaring prices for phones,
+   the telegram office in your town becomes very popular once again.
+   The telegram officer is grumpy and does not like accepting handwritten
+   notes from people to send out as a telegram.
+   Instead, he hires a scribe to jot down your spoken message and hand it to
+   him to send out.
+   Because of the sudden jump in demand,
+   there is not a great system in place for communicating with the scribe.
+   Instead, anyone in the office can speak to the scribe at any point,
+   and, if the scribe hears the customer clearly,
+   they will pass the message along to the telegram officer.
+   What piece of networking equipment does a similar job to the scribe?
+
+6. You are trying to coordinate a family reunion involving two cousins who
+   do not get along with one another.
+   Rather than send a lot of messages back and forth,
+   you want to coordinate via phone,
+   and you want to speak to them both at once to get it over with.
+   Because they can't stand to talk to one another,
+   you have two separate conversations going with them over two phones at the
+   same time.
+   Unfortunately,
+   this results in them frequently both trying to talk to you at the same time,
+   in which case you are unable to hear what either says.
+   Where does this same problem come up in wireless networking?
+
+
+7. You speak Spanish must faster than English,
+   but not as fluently,
+   so you cannot understand Spanish if you are in a crowded room or speaking to
+   someone who is very quiet.
+   Your English is slower,
+   but you can understand it even when spoken very softly.
+
+   You and your friend are first to a party,
+   so you are happily chatting away in Spanish.
+   Later, as the party gets noisier,
+   you switch to English to be sure you can understand one another.
+   How can something similar happen in computer networks?
+
+8. You are standing guard on an enormous wall with watchtowers every few
+   hundred feet.
+   If you see anything suspicious,
+   you are supposed to call it out to the watchtowers on both sides of you.
+   Suddenly, from your left, you hear a call of
+   "Beware, there is...".
+   At this point, a call comes in from your right:
+   "Oh my, they're...".
+   Unfortunately, you can't hear the details from either side,
+   so a portion of your wall gets blown up by an orc with magic dynamite and
+   the invaders breach it.
+   What problem shared with wireless networking was the downfall of your
+   fortress?
