@@ -1,42 +1,37 @@
-As noted on Piazza,
-you can turn in answers to this activity for extra credit on the midterm exam.
-See the relevant Piazza note for details.
-
-There is no need to rush through discussion to answer all of these on the day
-of class --
-any questions that we do not discuss will not be due as part of the extra
-credit assignment for the week.
-If you are not sure what needs to be filled out for a given week,
-please feel free to ask.
-
-I will be dropping in and out of rooms to facilitate to the discussions and in
-case you have any questions.
-Think of it like me walking around the classroom and listening to different
-groups.
-You can also flag me down in Zoom if you have a question even if I'm not in the
-room
-(I think the button in Zoom looks like a question mark).
-
-Note: some questions are taken entirely or in part from your textbook.
-
 # General Questions
 
-1. The primary differences between wired and wireless networks occur at which
-   layer(s)?
-
-2. What is an ad-hoc network?
+1. What is an ad-hoc network?
    How does it differ from most of the wireless networks we discuss?
 
-3. If a network has a low signal-to-noise ratio (SNR),
+2. If a network has a low signal-to-noise ratio (SNR),
    should it use a high-bitrate or low-bitrate modulation scheme?
 
-4. What is a beacon frame in an 802.11 network and what purpose does it serve?
+3. Consider a host using CDMA with the following chipping sequence:
+   ```
+   A: 1  1  -1 -1
+   ```
 
-5. If a wireless sender could send and receive at the same time,
-   would this allow collision detection to be effective in a wireless setting?
-   Why or why not?
+   If the host wants to send the bit `1`,
+   what does the receiver receive for that time slot?
+   I am asking specifically for a sequence of four values,
+   not for the eventual `1` that the receiver should be able to figure out.
+   For example,
+   ```
+   2 2 2 2
+   ```
 
-6. Consider hosts A and B using CDMA with the following chipping sequences:
+4. Consider a host using CDMA with the following chipping sequence:
+   ```
+   A: -1  1  -1 -1
+   ```
+
+   If the receiver recieves the following values,
+   what bit does the receiver believe was sent?
+   ```
+   1  -1  1  1
+   ```
+
+5. Consider hosts A and B using CDMA with the following chipping sequences:
    ```
    A: 1  1  1 -1  1 -1 -1  1
    B: 1 -1  1  1  1 -1  1 -1
@@ -47,6 +42,50 @@ Note: some questions are taken entirely or in part from your textbook.
    2 0 2 0 2 -2 0 0
    ```
    What was the bit sent by A?
+   What was the bit sent by B?
+
+6. Consider hosts A and B using CDMA with the following chipping sequences:
+   ```
+   A: 1 -1  1  1  1 -1 -1  1
+   B: 1 -1  1  1  1 -1  1 -1
+   ```
+
+   A receiver receives the following signal in one time slot:
+   ```
+   0  0  0  0  0  0 -2  2
+   ```
+   Try recovering the bit sent by A.
+   You should get a strange result.
+   What do you think happened?
+
+<!--
+2. Consider visiting a corn maze with a friend.
+   The two of you get separated at some point and cannot see one another.
+   It is getting dark,
+   and there are some ominous-looking children wandering around,
+   so you decide it is time to leave,
+   and you shout to your friend at the top of your voice to get their
+   attention.
+   Unfortunately, at the exact same time,
+   your friend decides to shout to you.
+   You are very far away in the maze,
+   so not only do you not hear what one another said,
+   you do not even realize that the other shouted because their voice is so
+   faint compared to your own.
+   At this point,
+   you believe your friend cannot hear you or chose not to respond.
+
+   As you are driving home in a rush without your friend,
+   you ponder how the problem you encountered relates to computer networking.
+   In particular, how does it relate to medium-access protocols?
+
+3. If a wireless sender could send and receive at the same time,
+   would this allow collision detection to be effective in a wireless setting?
+   Why or why not?
+-->
+
+<!--
+3. What is a beacon frame in an 802.11 network and what purpose does it serve?
 
 7. Consider both CSMA/CD and CSMA/CA.
    For each of these protocols,
@@ -81,3 +120,4 @@ Note: some questions are taken entirely or in part from your textbook.
 11. Explain how a wireless host that is not very active
     (i.e., does not send or receive very many packets)
     can save battery life.
+-->
