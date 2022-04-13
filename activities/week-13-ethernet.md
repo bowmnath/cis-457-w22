@@ -250,7 +250,7 @@ questions.
    Where does this same problem come up in wireless networking?
 
 
-7. You speak Spanish must faster than English,
+7. You speak Spanish much more quickly than English,
    but not as fluently,
    so you cannot understand Spanish if you are in a crowded room or speaking to
    someone who is very quiet.
@@ -271,7 +271,8 @@ questions.
    "Beware, there is...".
    At this point, a call comes in from your right:
    "Oh my, they're...".
-   Unfortunately, you can't hear the details from either side,
+   Unfortunately, you can't hear the details from either side because both are
+   speaking to you at once without realizing it,
    so a portion of your wall gets blown up by an orc with magic dynamite and
    the invaders breach it.
    What problem shared with wireless networking was the downfall of your
