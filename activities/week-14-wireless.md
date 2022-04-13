@@ -138,7 +138,22 @@
 18. Why do 802.11 frames include sequence numbers when 802.3 (Ethernet) frames
     do not?
 
-19. Assume a wireless host has MAC address 11:22:33:44:55:66.
+19. You are walking down the hallway and see your professor,
+    and you are hoping to ask a question about your project.
+    At the same time,
+    you see another student from your class approaching the professor.
+    Rather than dive right in to the question,
+    you say "Excuse me, professor?",
+    to make sure that you get to ask first.
+    Only once she responds to you do you ask your actual question,
+    and the other person waits to ask theirs.
+    What optional feature of wireless networking are you taking advantage of
+    in this case?
+    Although it is polite in human interaction,
+    why is it not particularly helpful from a technical perspective in this
+    scenario?
+
+20. Assume a wireless host has MAC address 11:22:33:44:55:66.
     The addresses in an 802.11 frame are, in the following order,
     * AA:BB:CC:DD:EE:FF
     * 11:22:33:44:55:66
@@ -147,17 +162,20 @@
     What is the MAC address of the router?
     Is this frame going from router to host or host to router?
 
-20. Consider a host that changes access points but remains on the same subnet.
+21. If a network is not particularly busy,
+    what is a downside to a request-to-send and clear-to-send setup?
+
+22. Consider a host that changes access points but remains on the same subnet.
     Which of the following change?
     * IP address of host
     * MAC address of host
     * MAC address of associated access point
     * MAC address of router
 
-21. Does a router send frames that have an access point's MAC address as their
+23. Does a router send frames that have an access point's MAC address as their
     destination?
     Why or why not?
 
-22. Explain how a wireless host that is not very active
+24. Explain how a wireless host that is not very active
     (i.e., does not send or receive very many packets)
     can save battery life.
