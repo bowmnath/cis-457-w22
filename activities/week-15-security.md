@@ -4,7 +4,7 @@
    attacker can harm you.
 
 2. Given the cipher below,
-   decode the following message: `hqwthkygugygp`
+   decode the following message: `hqwthkxgugxgp`
    ```
    abcdefghijklmnopqrstuvwxyz original
    cdefghijklmnopqrstuvwxyzab cipher
