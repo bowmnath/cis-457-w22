@@ -152,8 +152,39 @@
     How could an attacker who can modify my message in transit make me look
     bad?
 
-<!--
-20. Real-life certificate authority
-* come up with how to be authority
-* can you come up with "decentralized" way?
--->
+21. Assume you getting letter stating that you are now the proud owner of
+    an expensive antique car bought at auction and that you owe several
+    thousand dollars to pay for it.
+    You did not actually buy the car,
+    but someone bought it in your name and signed for it.
+    You protest that the receipt does not have your actual signature,
+    and you are able to produce old documents from your bank proving that you
+    sign papers differently than whoever bought the car.
+    Because you have proof,
+    the auction house has no choice but to stop hassling you to pay.
+    In terms of public-key cryptography,
+    what role did the bank play in this scenario?
+
+22. Symmetric-key cryptography provides confidentiality of a message.
+    If we want to provide message integrity and sender authentication using
+    symmetric key cryptography,
+    do we need to take additional steps?
+    If so, describe a possible way to provide those features.
+    If not, explain why not.
+
+23. Is it possible to send an encrypted and signed message using public-key
+    cryptography with just one public-private key pair?
+    If so, explain how it would be done.
+    If not, explain why not.
+
+24. In the slides,
+    a secure email is sent by first signing and then encrypting the message.
+    If we performed those steps in the opposite order
+    (i.e., encrypted the message and then signed the encrypted message),
+    would the message still
+    * be unreadable to outsiders?
+    * be verified as coming from a partiular sender?
+    * be verified as being unchanged?
+
+    If all of the above were satisfied,
+    would there be any other possible downside to sending this way?
