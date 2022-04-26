@@ -100,7 +100,7 @@
 
     Explain how your friend can "get the best of both worlds" --
     allowing users to deal with public-key encryption but getting them
-    the speed of private-key encryption.
+    the speed of symmetric-key encryption.
 
 14. If I sign a document written in pencil,
     I run the risk that someone will erase part of the document and rewrite it,
